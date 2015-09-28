@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
+        <meta charset="utf-8">
         <title>yra99ary</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700' rel='stylesheet' type='text/css'>
+        
         <style>
             html, body {
                 overflow: hidden;
                 margin: 0;
             }
+            img{
+                position: absolute;
+                left: 0;
+                width: 128px;
+                align="center";
+                top: 50%;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: -220px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
             body {
                 font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
                 color: #333;
             }
-            #wrapper {
+            #main {
                 position: absolute;
                 left: 0;
                 width: 320px;
@@ -23,7 +37,7 @@
                 top: 50%;
                 left: 50%;
                 margin-left: -160px;
-                margin-top: -160px;
+                margin-top: -100px;
                 -webkit-user-select: none;
                 -moz-user-select: none;
                 user-select: none;
@@ -32,17 +46,26 @@
                 font-family: 'sans-serif','Montserrat', 'Helvetica Neue', Arial;
                 font-weight: 700;
                 font-size: 30px;
-                letter-spacing: 9px;
+                letter-spacing: 4px;
+                margin: 10px;
+                left: 20px;
                 
-                margin: 12px 0;
-                left: 4px;
             }
             h2 {
-                color: #999;
+                color: #757575;
+                font-weight: normal;
+                font-size: 18px;
+                letter-spacing: .12em;
+                margin-bottom: 10px;
+                left: 15px;
+            }
+            h3 {
+                color: #bdbdbd;
                 font-weight: normal;
                 font-size: 15px;
                 letter-spacing: .12em;
                 margin-bottom: 30px;
+                font-style:italic;
                 left: 3px;
             }
             h1, h2 {
@@ -54,6 +77,22 @@
                 margin: 0;
                 letter-spacing: 2px;
             }
+            
+            #footer {
+                 position: absolute;
+                left: 0;
+                width: 320px;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                margin-left: -160px;
+                margin-top: 320px;
+               -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+                
+            }
+            
             canvas {
                 position: absolute;
                 top: 0;
@@ -71,79 +110,37 @@
             a:hover {
                 color: #333;
             }
+            
+    
         </style>
-        <script type="text/javascript">
-
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-38965494-1']);
-          _gaq.push(['_setDomainName', 'evanyou.me']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
-        </script>
+       
+     
     </head>
     <body>
-        <div id="wrapper">
+        <div id="profile"> 
+            <img src="icon/profile.png" >
+        </div>
+        <div id="main">
+        
             <h1>Gary Cheng</h1>
             <h2>UX/UI designer</h2>
+            <h3>" Enjoy these final moments of peace." </h3>
+            
             <p><a href="https://tw.linkedin.com/in/yra99ary" target="_blank">LinkedIn</a></p>
             <p><a href="https://medium.com/@yra99ary" target="_blank">Medium</a></p>
             <p><a href="https://dribbble.com/yra99ary" target="_blank">Dribbble</a></p>
             <p><a href="https://open.spotify.com/user/yraggary/playlist/7qzSbVJmvbyzv3zj8WARfD" target="_blank">Spotify</a></p>
             
         </div>
+        <div id="footer">
+            <footer>
+                
+            </footer>
+        </div>
         <canvas></canvas>
-        <script>
-            document.addEventListener('touchmove', function (e) {
-                e.preventDefault()
-            })
-            var c = document.getElementsByTagName('canvas')[0],
-                x = c.getContext('2d'),
-                pr = window.devicePixelRatio || 1,
-                w = window.innerWidth,
-                h = window.innerHeight,
-                f = 90,
-                q,
-                m = Math,
-                r = 0,
-                u = m.PI*2,
-                v = m.cos,
-                z = m.random
-            c.width = w*pr
-            c.height = h*pr
-            x.scale(pr, pr)
-            x.globalAlpha = 0.6
-            function i(){
-                x.clearRect(0,0,w,h)
-                q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
-                while(q[1].x<w+f) d(q[0], q[1])
-            }
-            function d(i,j){   
-                x.beginPath()
-                x.moveTo(i.x, i.y)
-                x.lineTo(j.x, j.y)
-                var k = j.x + (z()*2-0.25)*f,
-                    n = y(j.y)
-                x.lineTo(k, n)
-                x.closePath()
-                r-=u/-50
-                x.fillStyle = '#'+(v(r)*127+128<<16 | v(r+u/3)*127+128<<8 | v(r+u/3*2)*127+128).toString(16)
-                x.fill()
-                q[0] = q[1]
-                q[1] = {x:k,y:n}
-            }
-            function y(p){
-                var t = p + (z()*2-1.1)*f
-                return (t>h||t<0) ? y(p) : t
-            }
-            document.onclick = i
-            document.ontouchstart = i
-            i()
-        </script>
+ 
+        
+        
     </body>
+    
 </html>
