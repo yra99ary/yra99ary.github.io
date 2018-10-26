@@ -1,257 +1,101 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <title>yra99ary</title>
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-        <style>
-            html, body {
-                overflow: hidden;
-                margin: 0;
-            }
-            img{
-                position: absolute;
-                left: 0;
-                width: 128px;
-                align="center";
-                top: 50%;
-                left: 50%;
-                margin-left: -65px;
-                margin-top: -220px;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                user-select: none;
-            }
-            
-            #wrapper {
-                position: absolute;
-                left: 0;
-                width: 320px;
-                text-align: center;
-                top: 50%;
-                left: 50%;
-                margin-left: -160px;
-                margin-top: -160px;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                user-select: none;
-            }
-            
-            canvas {
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 0;
-                width: 100%;
-                height: 100%;
-                pointer-events: none;
-            }
-            
-            body {
-                font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
-                color: #333;
-                
-            }
-            #main {
-                position: absolute;
-                left: 0;
-                width: 320px;
-                text-align: center;
-                top: 50%;
-                left: 50%;
-                margin-left: -160px;
-                margin-top: -160px;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                user-select: none;
-            }
-            h1 {
-                font-family: 'sans-serif','Montserrat', 'Helvetica Neue', Arial;
-                font-weight: 700;
-                font-size: 30px;
-                letter-spacing: 2px;
-                margin: 10px;
-                left: 20px;
-                
-            }
-            h2 {
-                color: #757575;
-                font-weight: normal;
-                font-size: 15px;
-                letter-spacing: .1em;
-                margin-bottom: 10px;
-                left: 15px;
-            }
-            h3 {
-                color: #bdbdbd;
-                font-weight: normal;
-                font-size: 12px;
-                letter-spacing: .12em;
-                margin-bottom: 10px;
-                font-style:italic;
-                left: 3px;
-            }
-            
-            p {
-                font-size: 14px;
-                line-height: 2em;
-                margin: 0;
-                letter-spacing: 2px;
-            }
-            
-            b {
-                display: inline-block;
-                position: relative;
-                margin: 1.2em 0 1em 0;
-                padding: 1em;
-                
-                border-width:thin;
-                text-decoration: none;
-                
+<html lang="en">
+<head>
 
-               
-            }
-            
-            #footer {
-                
-                position: absolute;
-                left: 50%;
-                width: 320px;
-                text-align: center;
-                top: 42%;
-               
-                color: #bdbdbd;
-                margin-left: -160px;
-                margin-top: 320px;
-               -webkit-user-select: none;
-                -moz-user-select: none;
-                user-select: none;
-                
-            }
-            
-             #links {
-                margin-bottom: 60px;
-                
-            }
-            
-            
-            a {
-                color: #999;
-                
-                font-size:14px;
-                margin:16px;
-                    
-                text-decoration: none;
-                transition: color .2s ease;
-            }
-            a:hover {
-                color: #333;
-            }
-            
-           
-           
-        </style>
-        <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-38965494-1']);
-          _gaq.push(['_setDomainName', 'evanyou.me']);
-          _gaq.push(['_trackPageview']);
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        </script>
-       
-     
-    </head>
-    <body>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title> Gary Cheng</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-        <div id="main">
-   
-            <h1>Gary Cheng</h1>
-            <h2>UX designer</h2>
-            <h3>"My principle approach is to focus on the user’s motivations, behaviors and needs to deliver the appropriate experience and a successful product."</h3>
-        
-            <div is=links>
-            <p><a href="https://tw.linkedin.com/in/yra99ary" target="_blank">LinkedIn</a></p>
-            <p><a href="https://medium.com/@yra99ary" target="_blank">Medium</a></p>
-            <p><a href="https://dribbble.com/yra99ary" target="_blank">Dribbble</a></p>
-            </div>
-            
-              <button class="btn btn-1 btn-1c">MY PORTFOLIO</button>
-             
-            
-      
-</div>
-        
-        <canvas></canvas>
-        <script>
-            document.addEventListener('touchmove', function (e) {
-                e.preventDefault()
-            })
-            var c = document.getElementsByTagName('canvas')[0],
-                x = c.getContext('2d'),
-                pr = window.devicePixelRatio || 1,
-                w = window.innerWidth,
-                h = window.innerHeight,
-                f = 90,
-                q,
-                m = Math,
-                r = 0,
-                u = m.PI*2,
-                v = m.cos,
-                z = m.random
-            c.width = w*pr
-            c.height = h*pr
-            x.scale(pr, pr)
-            x.globalAlpha = 0.6
-            function i(){
-                x.clearRect(0,0,w,h)
-                q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
-                while(q[1].x<w+f) d(q[0], q[1])
-            }
-            function d(i,j){   
-                x.beginPath()
-                x.moveTo(i.x, i.y)
-                x.lineTo(j.x, j.y)
-                var k = j.x + (z()*2-0.25)*f,
-                    n = y(j.y)
-                x.lineTo(k, n)
-                x.closePath()
-                r-=u/-50
-                x.fillStyle = '#'+(v(r)*127+128<<16 | v(r+u/3)*127+128<<8 | v(r+u/3*2)*127+128).toString(16)
-                x.fill()
-                q[0] = q[1]
-                q[1] = {x:k,y:n}
-            }
-            function y(p){
-                var t = p + (z()*2-1.1)*f
-                return (t>h||t<0) ? y(p) : t
-            }
-            document.onclick = i
-            document.ontouchstart = i
-            i()
-        </script>
-   
-      
-        
-        <div id="footer">
-            <footer>
-            
-               
-            </footer>
-        </div>
-        
- 
-        
-        
-    </body>
-    
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/svg" href="images/eeeee.svg">
+  
+
+</head>
+<body>
+
+  <!-- Menu
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <div class="container">
+     <div class="row">
+      <div class="topnav">
+         <img src="images/pinterest.svg" width="20" height="20" class="img-valign" alt="">
+         <a class="active navbar-item0" href="index.html">Work</a>
+         <a class="navbar-item1" href="info.html">Info</a>
+         <a class="navbar-item2" href="#contact me">Contact me</a>
+      </div>
+  </div> 
+  </div>
+
+
+<div class="container">
+     <div class="row">
+     <div class="pnav">
+     <a style="font-weight:bolder;margin-left:2.7em">Gary Cheng</a>
+     </div>
+    </div>
+    </div>
+
+<div class="container">
+  <div class="row" >
+    <div class="seven columns">
+    <div class="pnav" style="margin-left:2.7em">
+         <a> Product designer. Focus on the user’s motivations, behaviors and needs to deliver the appropriate experience and a successful product. Find me at</a>
+         <a href="#">LinkedIn</a>, <a href="#">Dribbble</a> and <a href="#">Medium</a>.
+         </div>
+    </div>
+    <div class="five columns"></div>
+  </div>
+  </div>
+  
+  
+<div class="container">
+  <div class="row" >
+    <div class="one-third column">
+    <div class="work-pre">
+      <img src="images/pinterest.svg" width="300" height="300" class="img-valign" alt="">
+    </div>
+    </div>
+    <div class="one-third column">
+    <div class="work-pre">
+      <img src="images/pinterest.svg" width="300" height="300" class="img-valign" alt="">
+    </div>
+    </div>
+    <div class="one-third column">
+    <div class="work-pre">
+      <img src="images/pinterest.svg" width="300" height="300" class="img-valign" alt="">
+    </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
