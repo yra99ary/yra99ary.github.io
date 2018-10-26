@@ -422,7 +422,7 @@ there.
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Add a black background color to the top navigation */
-.topnav {
+#topnav {
   background-color: #ffffff;
   font-family: 'Consolas', monospace;
   font-size: 14px;
@@ -432,7 +432,7 @@ there.
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+#topnav a {
   color: #000000;
   /*display: block;*/
   text-decoration: none;
@@ -441,13 +441,13 @@ there.
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+#topnav a:hover {
   background-color:#ffffff;
   color: #4A4A4A;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+#topnav a.active {
   background-color: #ffffff;
   font-weight:bolder;
   color: #000000;
@@ -509,9 +509,6 @@ there.
   margin-left:2.7em;
 }
 
-.portfolio-container {
- 
-}
 
 
 .work-sc-bg {
