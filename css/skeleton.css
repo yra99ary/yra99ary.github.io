@@ -501,7 +501,7 @@ there.
 .img-valign {
   vertical-align: middle;
     margin-left: -1em;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.1em;
 }
 
 .work-pre{
@@ -552,8 +552,12 @@ there.
   }
 
   .responsive {
-    width: 100%;
+    width: 92%;
     max-width: 500px;
-    height: auto;
-    margin-top:2em;
+    
+    margin-top:1em;
+    margin-left:2.7em;
+   
+    
+    
 }
