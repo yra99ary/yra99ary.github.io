@@ -507,6 +507,12 @@ there.
     margin-bottom: 0.1em;
 }
 
+.img-valign2 {
+  vertical-align: middle;
+    margin-bottom: 0.1em;
+    margin-left:2.7em;
+}
+
 .work-pre{
   margin-top:2em;
   margin-left:2.7em;
@@ -565,3 +571,23 @@ there.
     -o-user-select: none;
     user-select: none;
 }
+
+.responsive-b {
+  width: 92%;
+  max-width: 800px;
+  margin-top:em;
+  margin-left:2.7em; 
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+
+
+.imgl{
+  float: left;
+  margin-right:1rem;
+}
+
