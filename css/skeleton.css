@@ -573,8 +573,8 @@ there.
 }
 
 .responsive-b {
-  width: 100%;
-  max-width: 900px;
+  width: 90%;
+  max-width: 1000px;
   margin-top:0.3em;
   margin-left:2.7em; 
   -webkit-user-select: none;
