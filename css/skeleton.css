@@ -573,9 +573,9 @@ there.
 }
 
 .responsive-b {
-  width: 92%;
-  max-width: 800px;
-  margin-top:em;
+  width: 90%;
+  max-width: 1000px;
+  margin-top:0.3em;
   margin-left:2.7em; 
   -webkit-user-select: none;
   -khtml-user-select: none;
