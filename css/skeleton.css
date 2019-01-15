@@ -584,6 +584,17 @@ there.
   user-select: none;
 }
 
+.responsive-c {
+  width: 100%;
+  max-width: 1000px;
+  margin-top:0.3em;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 
 
 .imgl{
