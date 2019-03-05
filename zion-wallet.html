@@ -195,11 +195,13 @@
               <a style="font-weight:lighter;font-size: 16px;">According to the basic Social Key Recovery flow in my mind, I started to design the preliminary wireframe. During the design, I also referred to the feedbacks of both team members and some cryptocurrency user to iterate on my design work.<br><br> 
                 <a style="font-weight:bolder;font-size: 14px;"> Iteration:</a><br>
               <img draggable="false" src="/images/sr-comp.png" alt="" class="responsive-c" > <br>
-              <a style="font-weight:lighter;font-size: 14px;"> Users can't see at a glance what information they need in version 1, including whether the feature is enabled or not, the trusted contact list and the backup status of the trusted contact. </a><br><br>
+              <a style="font-weight:lighter;font-size: 14px;"> Users can't see at a glance the information they need, including the trusted contact list and the backup status of the trusted contact. And users feel confused about if the social backup is enabled or not, the indicator should be more clear.</a><br><br>
+              <a style="font-weight:lighter;font-size: 14px;"> I combined invitation and list of trusted contact into one page, and made the whole page more clear and readable by using indicators to aware of the current status of backup status.</a><br><br>
               <img draggable="false" src="/images/sr-vr-comp.png" alt="" class="responsive-c" > <br>
-              <a style="font-weight:lighter;font-size: 14px;">Users feel that scanning QR code is not as practical as entering verification code directly.
+              <a style="font-weight:lighter;font-size: 14px;">Users feel that scanning QR code is not as practical as entering verification code directly. 
+                They prefer to see the name of trusted contact rather than just a device model information in the verification process.                 
               </a> <br><br>
-              <a style="font-weight:lighter;font-size: 14px;"> </a> They want to see the name of trusted contact rather than just a device model information in the verification process. Due to limitations of decentralized architecture, engineer team said thay can't get users' name directly. So users who helped backup back need to enter the name by themselves. Even if there is more additional step, the overall feedback is still positive.<br><br><br>
+              <a style="font-weight:lighter;font-size: 14px;"> </a> Due to limitations of decentralized architecture, engineer team feedbacks they can't get users' name directly. In the improved version, we decided to remove QR code process and design a new behavior that users who helped backup back need to enter the name by themselves. Even if there is more additional step, the overall feedback is still positive.<br><br><br>
               
 
               <a style="font-weight:bolder;font-size: 16px;"> Solution: <br><br>
@@ -208,7 +210,7 @@
               <a style="font-weight:lighter;font-size: 16px;"> > A status reminder can help user to check contacts from time to time to see if they're still available to help recover wallet. <br><br> 
                 <a style="font-weight:lighter;font-size: 16px;"> > If user’s trusted contacts’ copy of recovery data has been lost or corrupted, user can tap Resend by the contact's name to send another copy of recovery data. <br><br> 
                   <a style="font-weight:lighter;font-size: 16px;"> > Allow user to update trusted contacts as circumstances require. This might occur if a contact's phone is lost or stolen, or the contact is no longer able to assist in the recovery process
-                    </a>>
+                    </a>
                  
                     <br><br><br><br> 
  
@@ -222,13 +224,20 @@
               <br><br> 
             
                 <a style="font-weight:bolder;font-size: 14px;"> Iteration:<br>
-                  <img draggable="false" src="/images/send-vr.png" alt="" class="responsive-c" > <br><br>
-                  <a style="font-weight:bolder;font-size: 16px;"> Solution:<br>
-                    <a style="font-weight:lighter;font-size: 16px;"> I used Protopie to create two prototypes to determine which one is more effective and have more higher success rate.</a> <br> <br>
+                  <img draggable="false" src="/images/send-vr.png" alt="" class="responsive-c" > <br>
+                  <a style="font-weight:lighter;font-size: 14px;"> In the version 1, we found that users tend to paste address than enter it by themself and they want to make a note for each transaction. I made some design improvement in version 2, including added more ways to enter address, emphasized the paste function to replace the traditional input field that user enter the address and added a optional input field for users who want to take memo. <br><br>
+                  
+                    <a style="font-weight:lighter;font-size: 14px;"> I used Protopie to create two prototypes to determine which one is more effective and have more higher success rate.</a> <br> <br>
                     <a href="https://share.protopie.io/dWvJuMjGJ9L">Prototype-A </a> <br>
                     <a href="https://share.protopie.io/YpLrRPtBvkD">Prototype-B </a><br> <br>
-                    <a style="font-weight:lighter;font-size: 16px;"> In the end, I used a Prototype-A design(scroll panel) which is emphasized the paste function to replace the traditional input field that user enter the address. Prototype-A also has a higher success rate and effective than Prototype- B design and we found that user tend to paste address than enter it by themself as we think.</a>
+                    <a style="font-weight:lighter;font-size: 14px;"> In the end, we decided to use the Prototype-A design(scroll panel) which is also has a higher success rate and effective than Prototype- B design.</a>
                     </a><br><br>
+                    <a style="font-weight:bolder;font-size: 16px;"> Solution:<br><br>
+
+                      <a style="font-weight:lighter;font-size: 16px;"> <br><br> 
+                        <a style="font-weight:lighter;font-size: 16px;"> <br><br> 
+                          <a style="font-weight:lighter;font-size: 16px;"> <br><br> 
+
 
                     <a style="font-weight:bolder;font-size: 14px;"> OOBE:<br>
                       <img draggable="false" src="/images/oobe-key.png" alt="" class="responsive-c" > <br><br>
