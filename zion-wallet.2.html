@@ -103,7 +103,6 @@
       <a> Product Design</a><br>
       <a> Prototype Design</a><br>
       <a> Use case Design</a><br>
-      
      </a>  <br><br><br><br><br><br>
     </div>   
   </div>
@@ -177,70 +176,68 @@
     <div class="row">
       <div class="ten columns">
       <div class="pnav" style="margin-left:2.7em;margin-top:2em;">
-
-       
+          <a style="font-weight:bolder;font-size: 24px;"> Ideate Solution </a><br><br>
+        
+          <a style="font-weight:bolder;font-size: 16px;"> Pain point 1: The recovery key is too easy to forget and lose when in need.</a><br>
+            <br><b></b>
+          <a style="font-weight:lighter;font-size: 16px;"> In the decentralized world, recovery key will be the only way to help users restore wallet when they lose phone or forget transaction password. Right now there are two primary ways to store the recovery key, the first one is to prompt users to write it down on paper, and the second one is that service provider save the recovery key for users in the cloud. <br><br>But these ways don’t really solve users’ pain points. The first way still has the problem of forgetting and losing. The second way is the most convenient for the users, but it also violates the decentralization spirit of the blockchain. The server can easily become the target from hackers. In fact, since 2014, news of the hacking of the centralized exchange has been common. <br><br>Therefore, we know that we need to design a new way to solve this pain point.
+             </a>    <br><br>
 
              
-             <a style="font-weight:bolder;font-size: 24px;"> Problem solved: The recovery key is too easy to forget and lose when in need</a><br>
+             <a style="font-weight:bolder;font-size: 16px;"> Concept: This is Social Key Recovery</a><br>
             <br>
 
             
             <a style="font-weight:lighter;font-size: 16px;"> We design a new way called “Social Key Backup” to those who accidentally lost wallet or  forgot the recovery key, can still restore wallet through people they trust. <br><br>
             </a>
-            
-             <a style="font-weight:lighter;font-size: 16px;"> Our idea came from the previous in-depth interview, some participants share with us they heard someone splits the recovery key and keep the parts in different locations or trusted people.
-             We found most participants prefer to keep recovery key in trusted people than places. They feel that keep it in people they know is more reliable and difficult to forget.
-              
-              <br><br> 
+            <a style="font-weight:bolder;font-size: 14px;"> Basic Social Key Recovery flow:<br><br>
+            </a>
 
-              <a style="font-weight:bolder;font-size: 14px;"> Basic Social Key Recovery flow:<br><br>
-              </a>
-  
-                <img draggable="false" src="/images/d.png" alt="" class="responsive-c" ><br><br>
-              
+              <img draggable="false" src="/images/d.png" alt="" class="responsive-c" >
+             <a style="font-weight:lighter;font-size: 16px;"> Our idea came from the previous in-depth interview, some participants share with us they heard someone splits the recovery key and keep the parts in different locations or trusted people.<br><br> 
+              <a style="font-weight:lighter;font-size: 16px;">We found most participants prefer to keep recovery key in trusted people than places. They feel that keep it in people they know is more reliable and difficult to forget.
+                All they care about is that if once relationship become worse with someone, is it impossible to get their backup back? ,and some people care if the friends/family has properly save their backup.
+                <br><br> 
+              <a style="font-weight:lighter;font-size: 16px;">According to the basic Social Key Recovery flow in my mind, I started to design the preliminary wireframe. During the design, I also referred to the feedbacks of both team members and some cryptocurrency user to iterate on my design work. <br><br> 
               <a style="font-weight:bolder;font-size: 14px;"> Iteration:</a><br>
               <img draggable="false" src="/images/sr-comp.png" alt="" class="responsive-c" > <br>
-              <a style="font-weight:lighter;font-size: 14px;"> (BEFORE) Users can't see at a glance the information they need, including the trusted contact list and the backup status of the trusted contact. And users feel confused about if the social backup is enabled or not, the indicator should be more clear.</a><br><br>
-              <a style="font-weight:lighter;font-size: 14px;"> (AFTER) I combined invitation and list of trusted contact into one page, and made the whole page more clear and readable by using indicators to aware of the current status of backup status.</a><br><br><br><br>
+              <a style="font-weight:lighter;font-size: 14px;"> Users can't see at a glance the information they need, including the trusted contact list and the backup status of the trusted contact. And users feel confused about if the social backup is enabled or not, the indicator should be more clear.</a><br><br>
+              <a style="font-weight:lighter;font-size: 14px;"> I combined invitation and list of trusted contact into one page, and made the whole page more clear and readable by using indicators to aware of the current status of backup status.</a><br><br>
               
 
               <a style="font-weight:bolder;font-size: 16px;"> Solution: <br><br>
             
-              <a style="font-weight:lighter;font-size: 16px;">• Social Key Recovery allows users to choose three to five trusted contacts who can help recover their wallet. Once restored, users’ contacts can accept recovery requests to help you recover wallet. <br><br> 
-              <a style="font-weight:lighter;font-size: 16px;">• A status reminder can help users to check contacts from time to time to see if they're still available to help recover wallet. <br><br> 
-                <a style="font-weight:lighter;font-size: 16px;">• If users' trusted contacts copy of recovery data has been lost or corrupted, users can tap Resend by the contact's name to send another copy of recovery data. <br><br> 
-                  <a style="font-weight:lighter;font-size: 16px;">• Allow users to update trusted contacts as circumstances require. This might occur if a contact's phone is lost or stolen, or the contact is no longer able to assist in the recovery process
+              <a style="font-weight:lighter;font-size: 16px;"> > Social Key Recovery allows users to choose three to five trusted contacts who can help recover their wallet. Once restored, users’ contacts can accept recovery requests to help you recover wallet. <br><br> 
+              <a style="font-weight:lighter;font-size: 16px;"> > A status reminder can help users to check contacts from time to time to see if they're still available to help recover wallet. <br><br> 
+                <a style="font-weight:lighter;font-size: 16px;"> > If users' trusted contacts copy of recovery data has been lost or corrupted, users can tap Resend by the contact's name to send another copy of recovery data. <br><br> 
+                  <a style="font-weight:lighter;font-size: 16px;"> > Allow users to update trusted contacts as circumstances require. This might occur if a contact's phone is lost or stolen, or the contact is no longer able to assist in the recovery process
                     </a>
                  
                     <br><br><br><br><br><br> 
  
 
 
-            <a style="font-weight:bolder;font-size: 24px;"> Problem solved: Sending cryptocurrency can be complicated and confusing 
-            </a><br>
+            <a style="font-weight:bolder;font-size: 16px;"> Pain point 2: Users think the overall experience in transaction process is still room for improvement.
+            </a><br><br>
 
-            <a style="font-weight:lighter;font-size: 16px;"> </a>
+            <a style="font-weight:lighter;font-size: 16px;"> Most crypto wallets are in early phases of implementation and adoption, there is still room for improvement when users use these apps.
+              Sending, receiving and storing cryptocurrency can be complicated and confusing, particularly for beginners. And what I try to do is making Zion easy to use and help users to reduce the burden of entering cryptocurrency world.</a>
               <br><br> 
             
-                <a style="font-weight:bolder;font-size: 14px;"> Iteration<br>
+                <a style="font-weight:bolder;font-size: 14px;"> Iteration:<br>
                   <img draggable="false" src="/images/send-vr.png" alt="" class="responsive-c" > <br>
-                  <a style="font-weight:lighter;font-size: 14px;">(BEFORE) We found that users tend to paste address than enter it by themself and they want to make a note for each transaction. <br><br>
-                    (AFTER) I made some design improvement in the version 2, including added more ways to enter address, emphasized the paste function to replace the traditional input field that user enter the address and added a optional input field for users who want to take memo. <br><br>
+                  <a style="font-weight:lighter;font-size: 14px;"> In the version 1, we found that users tend to paste address than enter it by themself and they want to make a note for each transaction. I made some design improvement in the version 2, including added more ways to enter address, emphasized the paste function to replace the traditional input field that user enter the address and added a optional input field for users who want to take memo. <br><br>
                   
                     <a style="font-weight:lighter;font-size: 14px;"> I used Protopie to create two prototypes to determine which one is more effective and have more higher success rate.</a> <br> <br>
                     <a href="https://share.protopie.io/dWvJuMjGJ9L">Prototype-A </a> <br>
                     <a href="https://share.protopie.io/YpLrRPtBvkD">Prototype-B </a><br> <br>
                     
                     <a style="font-weight:bolder;font-size: 16px;"> Solution:<br><br>
-                      <a style="font-weight:lighter;font-size: 16px;"> •  We decided to use the Prototype-A design(scroll panel) which is also has a higher success rate and effective than Prototype-B design.<br><br>
-                      <a style="font-weight:lighter;font-size: 16px;"> • Provide more ways to enter address and use an interaction to make transaction process more intuitive and easy to use. <br><br> 
-                        <a style="font-weight:lighter;font-size: 16px;"> • Transaction fee is adjustable for different needs.<br><br> 
+                      <a style="font-weight:lighter;font-size: 16px;"> > We decided to use the Prototype-A design(scroll panel) which is also has a higher success rate and effective than Prototype-B design.<br><br>
+                      <a style="font-weight:lighter;font-size: 16px;"> > Provide more ways to enter address and use an interaction to make transaction process more intuitive and easy to use. <br><br> 
 
           </a>      
           <br><br><br><br><br><br> 
-
-
-
       </div>
      </div> 
     </div>
