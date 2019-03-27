@@ -33,10 +33,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
-
-
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+ 
   
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128159371-1"></script>
 <script>
@@ -92,6 +91,34 @@
   </div>
  </div>
 </div>
+
+
+
+<div class="container">
+    <div class="row" >
+      <div class="twelve columns">
+      <div class="pnav" style="margin-left:2.7em;margin-top:1em;"></div>
+     
+    
+
+     
+     
+
+
+     </div>
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="row">
@@ -242,51 +269,111 @@
                     <a style="font-weight:lighter;font-size: 16px;"> Positive reviews and high average rating is the most important metric to determine a KSP is successful or not.</a><br><br><br>
           
                   </div>   
-                
-                  <div>    
-
-
-                      <a style="font-weight:bolder;font-size:12px;"> Average Rating </a><br>
-                      <a style="font-weight:bolder;font-size:36px;"> 4.9 </a> <br>
-                      <a style="font-weight:lighter;font-size: 16px;"> Positive reviews and high average rating is the most important metric to determine a KSP is successful or not.</a><br><br><br>
-
-                      
-                   
-          
-                  </div> 
           
                 </div>
                 </div>
           
-          
-          
-          
+       
                 <div class="six columns">
-                  <div class="pnav" style="margin-left:2.7em;margin-top:2em;">
-                    <div>    
+                  <div class="pnav" style="margin-top:2em;">
+                    <div>
+                      <canvas id="line-chart"></canvas>
+                    </div>
+                    
+                    <script>
+
+
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: ["Jul","Sep","Oct","Nov"],
+    datasets: [{ 
+        data: [5,4.7,4.9,4.8],
+        label: "Rating",
+        borderColor: "#3e95cd",
+        fontFamily: "Consolas",
+        fill: false
+      },
+    ]
+  },
+  
+  options: {
+    title: {
+      display: true,
+      text: 'Google Play Rating history'
+    },
+    legend: { display: false }
+
+  }
+ 
+
+});
+
+
+                    </script>
+            
+                  </div>
+                  </div>
+          
+              
+
+
+                  <div class="row">
+                    <div class="six columns">
+                    <div class="pnav" style="margin-left:2.7em;margin-top:2em;">
+                      <div>
                         <a style="font-weight:bolder;font-size:12px;"> Positive Feedback Rate </a><br>
                         <a style="font-weight:bolder;font-size:36px;"> 97% </a><br>
                         <a style="font-weight:lighter;font-size: 16px;"> Most users are satisfied with this feature, 62% of them look forward to it can be more complete in the next update</a><br><br><br>
             
-            
-                    </div>   
-                  
-                    <div>    
-                     
-
-                        <a style="font-weight:bolder;font-size:12px;"> Critical Feedback Rate </a><br>
-                        <a style="font-weight:bolder;font-size:36px;"> 3% </a><br>
-                        <a style="font-weight:lighter;font-size: 16px;"> Most critical reviews come from complain about the unknown bugs and some hardware issues.</a><br><br><br><br><br><br>
+                      </div>   
+ 
+                    </div>
+                    </div>
               
+              
+              
+              
+                    <div class="six columns">
+                      <div class="pnav" style="margin-left:2.7em;margin-top:2em;">
                        
-            
-                    </div> 
-            
-                  </div>
-                  </div>
+                        <div>    
+                         
+    
+                            <a style="font-weight:bolder;font-size:12px;"> Critical Feedback Rate </a><br>
+                            <a style="font-weight:bolder;font-size:36px;"> 3% </a><br>
+                            <a style="font-weight:lighter;font-size: 16px;"> Most critical reviews come from complain about the unknown bugs and some hardware issues.</a><br><br><br><br><br><br>
+                  
+                           
+                
+                        </div> 
+                
+                      </div>
+                      </div>
+              
           
-          
-          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 

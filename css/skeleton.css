@@ -645,3 +645,9 @@ there.
   color: #000000;
   
 }
+
+
+<style>
+.checked {
+  color: orange;
+}
