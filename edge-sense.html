@@ -290,17 +290,36 @@ new Chart(document.getElementById("line-chart"), {
   type: 'line',
   data: {
     labels: ["Jun","Jul","Aug" ],
-    datasets: [{ 
-        data: [4.8, 4.6, 4.4 ],
-        pointRadius: [5,5,5,5,5,5,5],
-        pointHoverRadius: 30,
-        pointBackgroundColor: ["#00D563", "#00D563", "#F16172"],
-        pointBorderColor: ["#00D563", "#00D563", "#F16172"],
+    datasets: [
+      
+      { label: 'A',
+      yAxesGroup: 'A',
+        data: [4.9, 4.7, 4.7 ],
+        pointRadius: [5,5,5],
+        pointHoverRadius: 10,
+        pointBackgroundColor: ["#00D563", "#00D563", "#00D563"],
+        pointBorderColor: ["#00D563", "#00D563", "#00D563"],
         label: "Rating",
         borderColor: "#00D563",
         fontFamily: "Consolas",
         borderWidth: 2,
         backgroundColor: ['rgba(0, 213, 99, 0.2)'],
+        fill: true,
+      },
+
+
+      { label: 'B',
+      yAxesGroup: 'B',
+        data: [4.8, 4.6, 4.3 ],
+        pointRadius: [5,5,5],
+        pointHoverRadius: 10,
+        pointBackgroundColor: ["#F16172", "#F16172", "#F16172"],
+        pointBorderColor: ["#F16172", "#F16172", "#F16172"],
+        label: "Rating",
+        borderColor: "#F16172",
+        fontFamily: "Consolas",
+        borderWidth: 2,
+        backgroundColor: ['rgba(241, 97, 114, 0.6)'],
         fill: true,
       },
     ]
@@ -313,7 +332,6 @@ new Chart(document.getElementById("line-chart"), {
       text: 'Google Play Rating history (2017)',
       fontFamily: "Consolas",
       fontColor:"black",
-      
     },
     
     legend: { display: false 
