@@ -85,7 +85,9 @@
    <div class="twelve columns">
    <div class="pnav" style="margin-left:2.7em;margin-top:1em;">
    <div>    
-     <a style="font-weight:bolder;font-size:40px;line-height: 40px">Edge Sense x In-App Options, <br> a simple squeeze now lets you do more than ever before.  </a> <br><br><br><br>
+     <a style="font-weight:bolder;font-size:30px;line-height: 40px">Edge Sense x In-App Options</a> <br><br>
+     <a style="font-weight:bolder;font-size:40px;line-height: 40px">A simple squeeze now lets you do more than ever before.  </a>
+      <br><br><br><br>
      <br>
    </div>
   </div>
@@ -292,6 +294,25 @@ new Chart(document.getElementById("line-chart"), {
     labels: ["Jun","Jul","Aug" ],
     datasets: [
       
+   
+
+
+      { label: 'B',
+      yAxesGroup: 'B',
+        data: [4.8, 4.6, 4.4 ],
+        pointRadius: [5,5,5],
+        pointHoverRadius: 10,
+        pointBackgroundColor: ["#F16172", "#F16172", "#F16172"],
+        pointBorderColor: ["#F16172", "#F16172", "#F16172"],
+        label: "Rating",
+        borderColor: "#F16172",
+        fontFamily: "Consolas",
+        borderWidth: 2,
+        backgroundColor: ['rgba(241, 97, 114, 0.6)'],
+        fill: true,
+      },
+
+
       { label: 'A',
       yAxesGroup: 'A',
         data: [4.9, 4.7, 4.7 ],
@@ -304,22 +325,6 @@ new Chart(document.getElementById("line-chart"), {
         fontFamily: "Consolas",
         borderWidth: 2,
         backgroundColor: ['rgba(0, 213, 99, 0.2)'],
-        fill: true,
-      },
-
-
-      { label: 'B',
-      yAxesGroup: 'B',
-        data: [4.8, 4.6, 4.3 ],
-        pointRadius: [5,5,5],
-        pointHoverRadius: 10,
-        pointBackgroundColor: ["#F16172", "#F16172", "#F16172"],
-        pointBorderColor: ["#F16172", "#F16172", "#F16172"],
-        label: "Rating",
-        borderColor: "#F16172",
-        fontFamily: "Consolas",
-        borderWidth: 2,
-        backgroundColor: ['rgba(241, 97, 114, 0.6)'],
         fill: true,
       },
     ]
