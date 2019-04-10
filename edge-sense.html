@@ -407,30 +407,45 @@ new Chart(document.getElementById("line-chart"), {
                             data: {
                               labels: ["Jun","Jul","Aug" ],
                               datasets: [
-                              
-                                { label: 'B',
-                                yAxesGroup: 'B',
-                                  data: [91, 80, 72 ],
+
+                                { label: 'A',
+                                yAxesGroup: 'A',
+                                  data: [89, 76, 68 ],
                                   
                                   label: "Postive",
                                   borderColor: "#FFFFFF",
                                   fontFamily: "Consolas",
-                                  borderWidth: 2,
+                                  borderWidth: 1,
                                   backgroundColor: ['rgba(116, 123, 214, 1)','rgba(116, 123, 214, 1)','rgba(116, 123, 214, 1)'],
                                   fill: true,
                                 },
                           
                           
-                                { label: 'A',
-                                yAxesGroup: 'A',
+                                { label: 'B',
+                                yAxesGroup: 'B',
                                   data: [9, 20, 28 ],
                                   label: "Negative",
                                   borderColor: "#FFFFFF",
                                   fontFamily: "Consolas",
-                                  borderWidth: 2,
+                                  borderWidth: 1,
                                   backgroundColor: ['rgba(243, 125, 142, 1)','rgba(243, 125, 142, 1)','rgba(243, 125, 142, 1)'],
                                   fill: true,
                                 },
+
+                                
+
+                                { label: 'C',
+                                yAxesGroup: '',
+                                  data: [2, 4, 4 ],
+                                  label: "Neutral",
+                                  borderColor: "#FFFFFF",
+                                  fontFamily: "Consolas",
+                                  borderWidth: 1,
+                                  backgroundColor: ['rgba(252, 214, 122, 1)','rgba(252, 214, 122, 1)','rgba(252, 214, 122, 1)'],
+                                  fill: true,
+                                },
+
+
                               ]
                             },
                           
@@ -443,14 +458,22 @@ new Chart(document.getElementById("line-chart"), {
                                 fontColor:"black",
                               },
                               
-                              legend: { display: true,
+                              legend: { 
+                                display: true,
                                 position: 'bottom', 
+
+                                labels: {
+                                  
+                                  usePointStyle: true,
+                                 },
+                               
                               },
                             
                           
                               scales: {
                                 
                                 xAxes: [{  
+                                  
                                   stacked: true,
                                   barThickness: 20,                                  
                                   gridLines: {
@@ -461,6 +484,8 @@ new Chart(document.getElementById("line-chart"), {
                           
                           
                                   yAxes: [{
+
+                                  
                                     stacked: true,
                           
                                     gridLines: {
