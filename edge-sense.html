@@ -212,7 +212,7 @@
                 <div class="six columns">
                   <div class="pnav" style="margin-top:2em;">
                     <div>
-                        <a style="font-weight:bolder;font-size:12px;"> Store Rating history  (Before update) </a><br>
+                        <a style="font-weight:bolder;font-size:12px;"> Store Rating History  (Before update) </a><br>
                       <canvas id="line-chart"></canvas>
                     </div>
                     <br> <br>
@@ -223,15 +223,15 @@
 new Chart(document.getElementById("line-chart"), {
   type: 'bar',
   data: {
-    labels: ["Jun","Jul","Aug" ],
+    labels: ["Jun","Jul","Aug", ],
     datasets: [
     { label: 'A',
       yAxesGroup: 'A',
-        data: [4.92, 4.74, 4.61 ],
-        pointRadius: [5,5,5],
+        data: [4.92, 4.74, 4.61],
+        pointRadius: [5,5,5,10],
         pointHoverRadius: 10,
-        pointBackgroundColor: ["#2DCA70", "#2DCA70", "#2DCA70"],
-        pointBorderColor: ["#FFFFFF", "#FFFFFF", "#FFFFFF"],
+        pointBackgroundColor: ["#2DCA70", "#2DCA70", "#2DCA70","#FFFFFF"],
+        pointBorderColor: ["#FFFFFF", "#FFFFFF", "#FFFFFF", "#2DCA70"],
         label: "Rating",
         borderColor: "#2DCA70",
         fontFamily: "Consolas",
@@ -242,10 +242,12 @@ new Chart(document.getElementById("line-chart"), {
       },
 
 
+     
+
     {
                 label: "Bar Dataset",
                 data: [4.92, 4.74, 4.61],
-                backgroundColor: ['rgba(255, 255, 255, 0)','rgba(255, 255, 255, 0)','rgba(255, 255, 255, 0)'],
+                backgroundColor: ['rgba(255, 255, 255, 0)','rgba(255, 255, 255, 0)','rgba(255, 255, 255, 0)','rgba(255, 255, 255, 1)'],
             },
 
       
@@ -256,11 +258,16 @@ new Chart(document.getElementById("line-chart"), {
   options: {
     title: {
       display: true,
-      
+    
       fontFamily: "Consolas",
       fontColor:"black",
     },
-    
+    elements: {
+        line: {
+            tension: 0
+        }
+    },
+
     legend: { display: false 
     },
   
@@ -316,8 +323,8 @@ new Chart(document.getElementById("line-chart"), {
                     <div class="six columns">
                     <div class="pnav" style="margin-left:2.7em;margin-top:2em;">
                       <div>
-                        <a style="font-weight:bolder;font-size:12px;"> Average Rating </a><br>
-                        <a style="font-weight:bolder;font-size:36px;"> 4.9 </a> <br>
+                        <a style="font-weight:bolder;font-size:12px;"> Average Positive Sentimet Score </a><br>
+                        <a style="font-weight:bolder;font-size:36px;">  77.6%</a> <br>
                         <a style="font-weight:lighter;font-size: 16px;"> Positive reviews and high average rating is the most important metric to determine a KSP is successful or not.</a><br><br><br>
               
                       </div>   
@@ -350,7 +357,7 @@ new Chart(document.getElementById("line-chart"), {
                                   borderColor: "#FFFFFF",
                                   fontFamily: "Consolas",
                                   borderWidth: 1,
-                                  backgroundColor: ['rgba(116, 123, 214, 1)','rgba(116, 123, 214, 1)','rgba(116, 123, 214, 1)'],
+                                  backgroundColor: ['rgba(43, 202, 111, 1)','rgba(43, 202, 111, 1)','rgba(43, 202, 111, 1)'],
                                   fill: true,
                                 },
                           
@@ -486,30 +493,7 @@ new Chart(document.getElementById("line-chart"), {
 
 
 
-      <div class="row">
-      <div class="twelve columns">
-      <div class="foo red"  style="margin-left:2.5em;margin-top:2.7em;"></div><br>
-      <div class="pnav" style="margin-left:2.7em;">
-        
-          <a style="font-weight:bolder;font-size: 24px;"> TL;DR </a><br><br>
-          <a style="font-weight:lighter;font-size: 16px;"> Zion marks a grand new beginning for HTC, it is the first built-in hardware wallet on the Android phone.
-            We are dedicated to deliver the best user experience through design thinking to help user to reduce the burden of entering cryptocurrency world and come up with iterated
-            solutions for users’ pain points we found from user research.
-            <br><br>
-
-
-            <a style="font-weight:lighter;font-size: 16px;"> In our future roadmap, we will keep refining and updating future versions of Zion to make it more better after receiving more user data. And there will be some more advanced functions including partnership with Opera to extend DApp experience, payment, instant exchange and access to wider blockchain marketplace. 
-
-              <br><br>
-          
-         
-          <a style="font-weight:lighter;font-size: 16px;"> </a>  
-          <br><br><br><br><br><br> <br><br><br><br>
-      </div>
-     </div>
-    </div>
-
-
+      
  
 
  
