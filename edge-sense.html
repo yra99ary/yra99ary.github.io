@@ -414,6 +414,137 @@ new Chart(document.getElementById("line-chart"), {
                 
                       </div>
                       </div>
+
+
+
+       <div class="row">
+      <div class="twelve columns">
+      <div class="pnav" style="margin-left:2.7em;margin-top:2em;"">
+          <a style="font-weight:bolder;font-size: 24px;"> TL;DR </a><br><br>
+          <a style="font-weight:lighter;font-size: 16px;"> Zion marks a grand new beginning for HTC, it is the first built-in hardware wallet on the Android phone.
+            We are dedicated to deliver the best user experience through design thinking to help user to reduce the burden of entering cryptocurrency world and come up with iterated
+            solutions for users’ pain points we found from user research.
+            <br><br>
+
+
+            <a style="font-weight:lighter;font-size: 16px;"> In our future roadmap, we will keep refining and updating future versions of Zion to make it more better after receiving more user data. And there will be some more advanced functions including partnership with Opera to extend DApp experience, payment, instant exchange and access to wider blockchain marketplace. 
+
+              <br><br>
+          
+         
+          <a style="font-weight:lighter;font-size: 16px;"> </a>  
+          <br><br><br><br><br><br> <br><br><br><br>
+      </div>
+     </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="twelve columns">
+      <div class="pnav" style="margin-left:2.7em;margin-top:2em;"">
+          <a style="font-weight:bolder;font-size: 24px;"> TL;DR </a><br><br>
+       
+          <div>
+              <canvas id="bar-chart"></canvas>
+            </div>
+         
+          <a style="font-weight:lighter;font-size: 16px;"> </a>  
+          <br><br><br><br><br><br> <br><br><br><br>
+      </div>
+     </div>
+    </div>
+
+    <script>
+
+    new Chart(document.getElementById("bar-chart"), {
+      type: 'bar',
+      data: {
+        labels: ["Jun","Jul","Aug" ],
+        datasets: [
+        
+          { label: 'B',
+          yAxesGroup: 'B',
+            data: [0.909, 0.795, 0.76 ],
+            
+            label: "Rating",
+          
+            fontFamily: "Consolas",
+            borderWidth: 2,
+            backgroundColor: ['rgba(0, 213, 99, 0.2)','rgba(0, 213, 99, 0.2)','rgba(0, 213, 99, 0.2)',],
+            fill: true,
+          },
+    
+    
+          { label: 'A',
+          yAxesGroup: 'A',
+            data: [0.091, 0.205, 0.024 ],
+            label: "Rating",
+            
+            borderColor: "#F16172",
+            fontFamily: "Consolas",
+            borderWidth: 2,
+            backgroundColor: ['rgba(241, 97, 114, 0.6)','rgba(241, 97, 114, 0.6)','rgba(241, 97, 114, 0.6)'],
+            fill: true,
+          },
+        ]
+      },
+    
+      
+      options: {
+        title: {
+          display: true,
+          text: 'Title',
+          fontFamily: "Consolas",
+          fontColor:"black",
+        },
+        
+        legend: { display: false 
+        },
+      
+    
+        scales: {
+          
+          xAxes: [{  
+            stacked: true,                               
+            gridLines: {
+                            drawBorder: true,
+                            display: false
+                        },                        
+      }],            
+    
+    
+            yAxes: [{
+              stacked: true,
+    
+              gridLines: {
+                            drawBorder: true,
+                            display: false
+                        },
+                display: true,
+                ticks: {
+                Min: 0, 
+                Max: 100, 
+                callback: function(value) {
+                return (value / 100) + '%';
+                }
+              
+            },
+    
+            }]
+        }
+    
+      }
+    
+    });
+    
+    
+                        </script>
+
+        
+          
+
+
               
           
 
