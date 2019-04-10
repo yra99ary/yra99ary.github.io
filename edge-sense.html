@@ -356,8 +356,11 @@ new Chart(document.getElementById("line-chart"), {
             display: true,
             ticks: {
                 suggestedMin: 4.5, 
-                suggestedMax: 5, 
+                suggestedMax: 5.0, 
                 fixedStepSize: 0.5,
+                callback: function(value) {
+                                        return "★ "+ value
+                                        }
               
             },
 
@@ -407,7 +410,7 @@ new Chart(document.getElementById("line-chart"), {
                               
                                 { label: 'B',
                                 yAxesGroup: 'B',
-                                  data: [0.91, 0.8, 0.76 ],
+                                  data: [91, 80, 76 ],
                                   
                                   label: "Postive",
                                   borderColor: "#FFFFFF",
@@ -420,7 +423,7 @@ new Chart(document.getElementById("line-chart"), {
                           
                                 { label: 'A',
                                 yAxesGroup: 'A',
-                                  data: [0.09, 0.20, 0.24 ],
+                                  data: [9, 20, 4 ],
                                   label: "Negative",
                                   borderColor: "#FFFFFF",
                                   fontFamily: "Consolas",
@@ -466,11 +469,18 @@ new Chart(document.getElementById("line-chart"), {
                                               },
                                       display: true,
                                       ticks: {
-                                      fixedStepSize: 0.5,
+                                      fixedStepSize: 50,
                                       Min: 0, 
-                                      Max: 1, 
-                                 
+                                      Max: 100, 
+
+                                      callback: function(value) {
+                                        return value + "%"
+                                        }
+
                                   },
+
+
+                         
                           
                                   }]
                               }
