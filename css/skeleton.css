@@ -653,3 +653,14 @@ there.
 }
 
 
+.foo {
+  float: left;
+  width: 40px;
+  height: 5px;
+  margin: 5px;
+  border: 1px solid  solid rgba(0, 0, 0, .2);
+}
+
+.blue {
+  background: #747BD6;
+}
