@@ -324,7 +324,7 @@ new Chart(document.getElementById("line-chart"), {
   options: {
     title: {
       display: true,
-      text: 'Google Play Rating history (2017)',
+      text: 'Store Rating history  (Before update)',
       fontFamily: "Consolas",
       fontColor:"black",
     },
@@ -356,10 +356,10 @@ new Chart(document.getElementById("line-chart"), {
             display: true,
             ticks: {
                 suggestedMin: 4.5, 
-                suggestedMax: 5.0, 
+                suggestedMax: 5, 
                 fixedStepSize: 0.5,
                 callback: function(value) {
-                                        return "★ "+ value
+                                        return  value + " ★"
                                         }
               
             },
@@ -410,7 +410,7 @@ new Chart(document.getElementById("line-chart"), {
                               
                                 { label: 'B',
                                 yAxesGroup: 'B',
-                                  data: [91, 80, 76 ],
+                                  data: [91, 80, 72 ],
                                   
                                   label: "Postive",
                                   borderColor: "#FFFFFF",
@@ -423,7 +423,7 @@ new Chart(document.getElementById("line-chart"), {
                           
                                 { label: 'A',
                                 yAxesGroup: 'A',
-                                  data: [9, 20, 4 ],
+                                  data: [9, 20, 28 ],
                                   label: "Negative",
                                   borderColor: "#FFFFFF",
                                   fontFamily: "Consolas",
@@ -438,7 +438,7 @@ new Chart(document.getElementById("line-chart"), {
                             options: {
                               title: {
                                 display: true,
-                                text: 'Title',
+                                text: 'Sentimet Score (Before update)',
                                 fontFamily: "Consolas",
                                 fontColor:"black",
                               },
