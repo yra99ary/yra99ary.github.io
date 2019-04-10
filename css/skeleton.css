@@ -661,6 +661,10 @@ there.
   border: 1px solid  solid rgba(0, 0, 0, .2);
 }
 
+.red {
+  background: #2BCA6F;
+}
+
 .blue {
-  background: #747BD6;
+  background: #88A8FD;
 }
