@@ -270,7 +270,7 @@
                 <div class="pnav" style="margin-left:2.7em;margin-top:2em;">
                   <div>
                     <a style="font-weight:bolder;font-size:12px;"> Average Rating </a><br>
-                    <a style="font-weight:bolder;font-size:36px;"> 4.9 </a> <br>
+                    <a style="font-weight:bolder;font-size:36px;"> 4.8 </a> <br>
                     <a style="font-weight:lighter;font-size: 16px;"> Positive reviews and high average rating is the most important metric to determine a KSP is successful or not.</a><br><br><br>
           
                   </div>   
@@ -285,48 +285,38 @@
                       <canvas id="line-chart"></canvas>
                     </div>
                     
-                    <script>
+ <script>
 
 
 new Chart(document.getElementById("line-chart"), {
-  type: 'line',
+  type: 'bar',
   data: {
     labels: ["Jun","Jul","Aug" ],
     datasets: [
-      
-   
-
-
-      { label: 'B',
-      yAxesGroup: 'B',
-        data: [4.8, 4.6, 4.4 ],
-        pointRadius: [5,5,5],
-        pointHoverRadius: 10,
-        pointBackgroundColor: ["#F16172", "#F16172", "#F16172"],
-        pointBorderColor: ["#F16172", "#F16172", "#F16172"],
-        label: "Rating",
-        borderColor: "#F16172",
-        fontFamily: "Consolas",
-        borderWidth: 2,
-        backgroundColor: ['rgba(241, 97, 114, 0.6)'],
-        fill: true,
-      },
-
-
-      { label: 'A',
+    { label: 'A',
       yAxesGroup: 'A',
-        data: [4.9, 4.7, 4.7 ],
+        data: [4.92, 4.74, 4.61 ],
         pointRadius: [5,5,5],
         pointHoverRadius: 10,
-        pointBackgroundColor: ["#00D563", "#00D563", "#00D563"],
-        pointBorderColor: ["#00D563", "#00D563", "#00D563"],
+        pointBackgroundColor: ["#2DCA70", "#2DCA70", "#2DCA70"],
+        pointBorderColor: ["#FFFFFF", "#FFFFFF", "#FFFFFF"],
         label: "Rating",
-        borderColor: "#00D563",
+        borderColor: "#2DCA70",
         fontFamily: "Consolas",
         borderWidth: 2,
-        backgroundColor: ['rgba(0, 213, 99, 0.2)'],
-        fill: true,
+        backgroundColor: ['rgba(45, 202, 112, 1)'],
+        fill: false,
+        type: 'line',
       },
+
+
+    {
+                label: "Bar Dataset",
+                data: [4.92, 4.74, 4.61],
+                backgroundColor: ['rgba(255, 255, 255, 0)','rgba(255, 255, 255, 0)','rgba(255, 255, 255, 0)'],
+            },
+
+      
     ]
   },
 
@@ -345,11 +335,15 @@ new Chart(document.getElementById("line-chart"), {
 
     scales: {
 
-      xAxes: [{                                 
+      xAxes: [{  
+               
         gridLines: {
                         drawBorder: true,
-                        display: false
-                    },                        
+                        display: false,
+              
+                    },  
+
+              
   }],            
 
 
@@ -357,12 +351,13 @@ new Chart(document.getElementById("line-chart"), {
 
           gridLines: {
                         drawBorder: true,
-                        display: false
+                        display: false,
                     },
             display: true,
             ticks: {
-                suggestedMin: 4, 
+                suggestedMin: 4.5, 
                 suggestedMax: 5, 
+                fixedStepSize: 0.5,
               
             },
 
@@ -374,47 +369,126 @@ new Chart(document.getElementById("line-chart"), {
 });
 
 
-                    </script>
+</script>
             
                   </div>
                   </div>
-          
-              
+
+                  
 
 
                   <div class="row">
                     <div class="six columns">
                     <div class="pnav" style="margin-left:2.7em;margin-top:2em;">
                       <div>
-                        <a style="font-weight:bolder;font-size:12px;"> Positive Feedback Rate </a><br>
-                        <a style="font-weight:bolder;font-size:36px;"> 97% </a><br>
-                        <a style="font-weight:lighter;font-size: 16px;"> Most users are satisfied with this feature, 62% of them look forward to it can be more complete in the next update</a><br><br><br>
-            
+                        <a style="font-weight:bolder;font-size:12px;"> Average Rating </a><br>
+                        <a style="font-weight:bolder;font-size:36px;"> 4.9 </a> <br>
+                        <a style="font-weight:lighter;font-size: 16px;"> Positive reviews and high average rating is the most important metric to determine a KSP is successful or not.</a><br><br><br>
+              
                       </div>   
- 
+              
                     </div>
                     </div>
               
-              
-              
-              
+           
                     <div class="six columns">
-                      <div class="pnav" style="margin-left:2.7em;margin-top:2em;">
-                       
-                        <div>    
-                         
-    
-                            <a style="font-weight:bolder;font-size:12px;"> Critical Feedback Rate </a><br>
-                            <a style="font-weight:bolder;font-size:36px;"> 3% </a><br>
-                            <a style="font-weight:lighter;font-size: 16px;"> Most critical reviews come from complain about the unknown bugs and some hardware issues.</a><br><br><br><br><br><br>
-                  
-                           
-                
-                        </div> 
-                
-                      </div>
-                      </div>
+                      <div class="pnav" style="margin-top:2em;">
+                        <div>
+                          <canvas id="bar-chart"></canvas>
+                        </div>
 
+                        <script>
+
+                          new Chart(document.getElementById("bar-chart"), {
+                            type: 'bar',
+                            data: {
+                              labels: ["Jun","Jul","Aug" ],
+                              datasets: [
+                              
+                                { label: 'B',
+                                yAxesGroup: 'B',
+                                  data: [0.91, 0.8, 0.76 ],
+                                  
+                                  label: "Postive",
+                                  borderColor: "#FFFFFF",
+                                  fontFamily: "Consolas",
+                                  borderWidth: 2,
+                                  backgroundColor: ['rgba(116, 123, 214, 1)','rgba(116, 123, 214, 1)','rgba(116, 123, 214, 1)'],
+                                  fill: true,
+                                },
+                          
+                          
+                                { label: 'A',
+                                yAxesGroup: 'A',
+                                  data: [0.09, 0.20, 0.24 ],
+                                  label: "Negative",
+                                  borderColor: "#FFFFFF",
+                                  fontFamily: "Consolas",
+                                  borderWidth: 2,
+                                  backgroundColor: ['rgba(243, 125, 142, 1)','rgba(243, 125, 142, 1)','rgba(243, 125, 142, 1)'],
+                                  fill: true,
+                                },
+                              ]
+                            },
+                          
+                            
+                            options: {
+                              title: {
+                                display: true,
+                                text: 'Title',
+                                fontFamily: "Consolas",
+                                fontColor:"black",
+                              },
+                              
+                              legend: { display: true,
+                                position: 'bottom', 
+                              },
+                            
+                          
+                              scales: {
+                                
+                                xAxes: [{  
+                                  stacked: true,
+                                  barThickness: 20,                                  
+                                  gridLines: {
+                                                  drawBorder: true,
+                                                  display: false
+                                              },                        
+                            }],            
+                          
+                          
+                                  yAxes: [{
+                                    stacked: true,
+                          
+                                    gridLines: {
+                                                  drawBorder: true,
+                                                  display: false
+                                              },
+                                      display: true,
+                                      ticks: {
+                                      fixedStepSize: 0.5,
+                                      Min: 0, 
+                                      Max: 1, 
+                                 
+                                  },
+                          
+                                  }]
+                              }
+                          
+                            }
+                          
+                          });
+                          
+                          
+                           </script>
+
+                      </div>
+                    </div>
+          
+              
+
+
+                 
 
 
        <div class="row">
@@ -440,113 +514,6 @@ new Chart(document.getElementById("line-chart"), {
 
 
 
-    <div class="row">
-      <div class="twelve columns">
-      <div class="pnav" style="margin-left:2.7em;margin-top:2em;"">
-          <a style="font-weight:bolder;font-size: 24px;"> TL;DR </a><br><br>
-       
-          <div>
-              <canvas id="bar-chart"></canvas>
-            </div>
-         
-          <a style="font-weight:lighter;font-size: 16px;"> </a>  
-          <br><br><br><br><br><br> <br><br><br><br>
-      </div>
-     </div>
-    </div>
-
-    <script>
-
-    new Chart(document.getElementById("bar-chart"), {
-      type: 'bar',
-      data: {
-        labels: ["Jun","Jul","Aug" ],
-        datasets: [
-        
-          { label: 'B',
-          yAxesGroup: 'B',
-            data: [0.909, 0.795, 0.76 ],
-            
-            label: "Rating",
-          
-            fontFamily: "Consolas",
-            borderWidth: 2,
-            backgroundColor: ['rgba(0, 213, 99, 0.2)','rgba(0, 213, 99, 0.2)','rgba(0, 213, 99, 0.2)',],
-            fill: true,
-          },
-    
-    
-          { label: 'A',
-          yAxesGroup: 'A',
-            data: [0.091, 0.205, 0.024 ],
-            label: "Rating",
-            
-            borderColor: "#F16172",
-            fontFamily: "Consolas",
-            borderWidth: 2,
-            backgroundColor: ['rgba(241, 97, 114, 0.6)','rgba(241, 97, 114, 0.6)','rgba(241, 97, 114, 0.6)'],
-            fill: true,
-          },
-        ]
-      },
-    
-      
-      options: {
-        title: {
-          display: true,
-          text: 'Title',
-          fontFamily: "Consolas",
-          fontColor:"black",
-        },
-        
-        legend: { display: false 
-        },
-      
-    
-        scales: {
-          
-          xAxes: [{  
-            stacked: true,                               
-            gridLines: {
-                            drawBorder: true,
-                            display: false
-                        },                        
-      }],            
-    
-    
-            yAxes: [{
-              stacked: true,
-    
-              gridLines: {
-                            drawBorder: true,
-                            display: false
-                        },
-                display: true,
-                ticks: {
-                Min: 0, 
-                Max: 100, 
-                callback: function(value) {
-                return (value / 100) + '%';
-                }
-              
-            },
-    
-            }]
-        }
-    
-      }
-    
-    });
-    
-    
-                        </script>
-
-        
-          
-
-
-              
-          
 
 
        <div class="row">
