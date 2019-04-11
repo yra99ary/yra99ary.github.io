@@ -161,12 +161,15 @@
 
     <div class="row">
     <div class="twelve columns" >
-        <div class="foo blue"  style="margin-left:2.7em;margin-top:2.7em;"></div><br>
+        <div class="foo red"  style="margin-left:2.5em;margin-top:2.7em;"></div><br>
     <div class="pnav" style="margin-left:2.7em;">
         <a style="font-weight:bolder;font-size: 24px;"> <br>The Problem</a><br><br>
         <a style="font-size: 16px;">Since the first launch of Edge Sense, we have been continuously monitoring and analyzing the performance of it across the market and community. Most of the feedbacks were positive, but we found the overall rating and sentiment score was gradually decreasing.
           And some users <span style="font-weight:bolder;">considered it as a gimmick and limited feature and looked forward to it can be more complete in the future.</span>
+        <br><br> <br><br>
         <br><br>
+        <br><br>
+
 
          
         </a>
@@ -175,85 +178,11 @@
    </div>
   </div>
   
-    <div class="row">
-      <div class="four columns">
-      <div class="pnav" style="margin-left:2.7em;margin-top:2em;">
-        <div>    
-          <a style="font-weight:bolder;font-size:20px;"> Jack Sa**n </a><br>
-          <span style="color:#00D563;font-size:1.2em;"> ★ ★ ★ ★ ☆ </span><br>
-          <a style="font-weight:lighter;font-size: 14px;"> More useful than I thought it would be. Would like some other squeeze options to be able to do more, but a great start.</a><br><br><br>
-
-        </div>   
-      
-        <div>    
-         
-          <a style="font-weight:bolder;font-size:20px;"> sha**b msd </a><br>
-          <span style="color:#00D563;font-size:1.2em;"> ★ ★ ★ ★ ★ </span><br>
-          <a style="font-weight:lighter;font-size: 14px;"> add more faction hold - swipe (up dwon right left) swipe like zoomin and out</a><br><br><br><br><br><br>
-  
-
-        </div> 
-
-      </div>
-      </div>
-
-
-
-
-      <div class="four columns">
-        <div class="pnav" style="margin-left:2.7em;margin-top:2em;">
-          <div>    
-           
-            <a style="font-weight:bolder;font-size:20px;"> Nitharjan KANAGAR**H </a><br>
-            <span style="color:#00D563;font-size:1.2em;"> ★ ★ ★ ★ ☆ </span><br>
-            <a style="font-weight:lighter;font-size: 14px;"> Can be improved by allowing specific action whether we are locked or in a specific app.</a><br><br><br>
-  
-  
-          </div>   
-        
-          <div>    
-           
-            <a style="font-weight:bolder;font-size:20px;"> leapH**k </a><br>
-            <span style="color:#00D563;font-size:1.2em;"> ★ ★ ★ ★ ★ </span><br>
-            <a style="font-weight:lighter;font-size: 14px;"> Just awesome... More than just agimmick unlike the common comments... You will learn to appreciate it when you actually use it... </a><br><br><br><br><br><br>
-  
-          </div> 
-  
-        </div>
-        </div>
-
-
-
-
-        <div class="four columns">
-          <div class="pnav" style="margin-left:2.7em;margin-top:2em;">
-            <div>    
-             
-              <a style="font-weight:bolder;font-size:20px;"> Bao Ngu**n </a><br>
-            <span style="color:#00D563;font-size:1.2em;"> ★ ★ ★ ★ ★ </span><br>
-            <a style="font-weight:lighter;font-size: 14px;"> Used edge sense to screen shot, really great, hope htc release more feature.</a><br><br><br>
-    
-            </div>   
-          
-            <div>    
-
-                <a style="font-weight:bolder;font-size:20px;"> Sh**g Cai Lim </a><br>
-            <span style="color:#00D563;font-size:1.2em;"> ★ ★ ★ ★ ★ </span><br>
-            <a style="font-weight:lighter;font-size: 14px;"> Great idea, but still needs time to expand the list of mappable findings. It would be great if it mapped to the back button too.</a><br><br><br><br><br><br>
-  
-    
-            </div> 
-    
-          </div>
-          </div>
-
-
-    
-
+ 
 
           <div class="row">
               <div class="twelve columns">
-              <div class="foo blue"  style="margin-left:2.7em;margin-top:2.7em;"></div><br>
+              <div class="foo red"  style="margin-left:2.5em;margin-top:2.7em;"></div><br>
               <div class="pnav" style="margin-left:2.7em;">
                   <a style="font-weight:bolder;font-size: 24px;"> <br>User Research</a><br><br>
                   <a style="font-size: 16px;"> The research aimed to understand the feedback from users with the usage of the current feature. We decided to analyze the user review data from the Play Store and translate them to key factors to determine which part should be improved and what feature to roll out first.
@@ -283,6 +212,7 @@
                 <div class="six columns">
                   <div class="pnav" style="margin-top:2em;">
                     <div>
+                        <a style="font-weight:bolder;font-size:12px;"> Store Rating History  (Before update) </a><br>
                       <canvas id="line-chart"></canvas>
                     </div>
                     <br> <br>
@@ -293,15 +223,15 @@
 new Chart(document.getElementById("line-chart"), {
   type: 'bar',
   data: {
-    labels: ["Jun","Jul","Aug" ],
+    labels: ["Jun","Jul","Aug", ],
     datasets: [
     { label: 'A',
       yAxesGroup: 'A',
-        data: [4.92, 4.74, 4.61 ],
-        pointRadius: [5,5,5],
+        data: [4.92, 4.74, 4.61],
+        pointRadius: [5,5,5,10],
         pointHoverRadius: 10,
-        pointBackgroundColor: ["#2DCA70", "#2DCA70", "#2DCA70"],
-        pointBorderColor: ["#FFFFFF", "#FFFFFF", "#FFFFFF"],
+        pointBackgroundColor: ["#2DCA70", "#2DCA70", "#2DCA70","#FFFFFF"],
+        pointBorderColor: ["#FFFFFF", "#FFFFFF", "#FFFFFF", "#2DCA70"],
         label: "Rating",
         borderColor: "#2DCA70",
         fontFamily: "Consolas",
@@ -312,10 +242,12 @@ new Chart(document.getElementById("line-chart"), {
       },
 
 
+     
+
     {
                 label: "Bar Dataset",
                 data: [4.92, 4.74, 4.61],
-                backgroundColor: ['rgba(255, 255, 255, 0)','rgba(255, 255, 255, 0)','rgba(255, 255, 255, 0)'],
+                backgroundColor: ['rgba(255, 255, 255, 0)','rgba(255, 255, 255, 0)','rgba(255, 255, 255, 0)','rgba(255, 255, 255, 1)'],
             },
 
       
@@ -326,11 +258,16 @@ new Chart(document.getElementById("line-chart"), {
   options: {
     title: {
       display: true,
-      text: 'Store Rating history  (Before update)',
+    
       fontFamily: "Consolas",
       fontColor:"black",
     },
-    
+    elements: {
+        line: {
+            tension: 0
+        }
+    },
+
     legend: { display: false 
     },
   
@@ -386,18 +323,19 @@ new Chart(document.getElementById("line-chart"), {
                     <div class="six columns">
                     <div class="pnav" style="margin-left:2.7em;margin-top:2em;">
                       <div>
-                        <a style="font-weight:bolder;font-size:12px;"> Average Rating </a><br>
-                        <a style="font-weight:bolder;font-size:36px;"> 4.9 </a> <br>
+                        <a style="font-weight:bolder;font-size:12px;"> Average Positive Sentimet Score </a><br>
+                        <a style="font-weight:bolder;font-size:36px;">  77.6%</a> <br>
                         <a style="font-weight:lighter;font-size: 16px;"> Positive reviews and high average rating is the most important metric to determine a KSP is successful or not.</a><br><br><br>
               
                       </div>   
               
                     </div>
                     </div>
-              
+                    
            
                     <div class="six columns">
                       <div class="pnav" style="margin-top:2em;">
+                          <a style="font-weight:bolder;font-size:12px;"> Sentimet Score (Before update) </a><br>
                         <div>
                           <canvas id="bar-chart"></canvas>
                         </div>
@@ -419,7 +357,7 @@ new Chart(document.getElementById("line-chart"), {
                                   borderColor: "#FFFFFF",
                                   fontFamily: "Consolas",
                                   borderWidth: 1,
-                                  backgroundColor: ['rgba(116, 123, 214, 1)','rgba(116, 123, 214, 1)','rgba(116, 123, 214, 1)'],
+                                  backgroundColor: ['rgba(43, 202, 111, 1)','rgba(43, 202, 111, 1)','rgba(43, 202, 111, 1)'],
                                   fill: true,
                                 },
                           
@@ -456,7 +394,7 @@ new Chart(document.getElementById("line-chart"), {
                             options: {
                               title: {
                                 display: true,
-                                text: 'Sentimet Score (Before update)',
+  
                                 fontFamily: "Consolas",
                                 fontColor:"black",
                               },
@@ -531,7 +469,7 @@ new Chart(document.getElementById("line-chart"), {
 
       <div class="row">
       <div class="twelve columns">
-          <div class="foo blue"  style="margin-left:2.7em"></div><br>
+          <div class="foo red"  style="margin-left:2.5em"></div><br>
       <div class="pnav" style="margin-left:2.7em;">
           <a style="font-weight:bolder;font-size: 24px;"> TL;DR </a><br><br>
           <a style="font-weight:lighter;font-size: 16px;"> Zion marks a grand new beginning for HTC, it is the first built-in hardware wallet on the Android phone.
@@ -555,30 +493,7 @@ new Chart(document.getElementById("line-chart"), {
 
 
 
-      <div class="row">
-      <div class="twelve columns">
-      <div class="foo blue"  style="margin-left:2.7em"></div><br>
-      <div class="pnav" style="margin-left:2.7em;">
-        
-          <a style="font-weight:bolder;font-size: 24px;"> TL;DR </a><br><br>
-          <a style="font-weight:lighter;font-size: 16px;"> Zion marks a grand new beginning for HTC, it is the first built-in hardware wallet on the Android phone.
-            We are dedicated to deliver the best user experience through design thinking to help user to reduce the burden of entering cryptocurrency world and come up with iterated
-            solutions for users’ pain points we found from user research.
-            <br><br>
-
-
-            <a style="font-weight:lighter;font-size: 16px;"> In our future roadmap, we will keep refining and updating future versions of Zion to make it more better after receiving more user data. And there will be some more advanced functions including partnership with Opera to extend DApp experience, payment, instant exchange and access to wider blockchain marketplace. 
-
-              <br><br>
-          
-         
-          <a style="font-weight:lighter;font-size: 16px;"> </a>  
-          <br><br><br><br><br><br> <br><br><br><br>
-      </div>
-     </div>
-    </div>
-
-
+      
  
 
  
