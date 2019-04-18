@@ -670,5 +670,9 @@ there.
 }
 
 .checkon {
-  color: #2BCA6F;
+  color: #FF9500;
+}
+
+.checkoff {
+  color: #BFBFBF;
 }
