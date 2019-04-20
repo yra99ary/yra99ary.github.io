@@ -24,6 +24,45 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  <style type="text/css">
+    
+
+    
+    .slider {
+      
+        margin: 10px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 10px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon_0.png">
@@ -36,6 +75,24 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".vertical-center-4").slick({
+        dots: true,
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 2,
+  adaptiveHeight: true,
+  autoplay: true,
+  arrows: false,
+  dots: false,
+  centerPadding: '50px',
+      });
+    });
+  </script>
  
   
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128159371-1"></script>
@@ -446,9 +503,9 @@ new Chart(document.getElementById("line-chart"), {
                             <a style="font-size: 16px;"> Then we started to see the content of negative reviews from users and try to find out the shortcomings in the current product.
                             Although receiving negative reviews can be very painful and upset, but we considered that negative reviews are also an opportunity to help us to improve the product experience.  
           
-                            <br><br>
-                            There are two 2 major user pain ponts can be identified from these negative reviews:  
-                            </a>
+                        
+                            
+                            </a><br><br>
                       
                         </div>
                       </div>
@@ -456,221 +513,166 @@ new Chart(document.getElementById("line-chart"), {
 
 
 
-                        <div class="row" style="margin-top:2em;">
-                            <div class="six columns" >
-                            <div class="pnav" style="margin-left:2.7em;">
+                       <div class="row">
+                        <div class="six columns" >
+                        <div class="pnav">
+                       
+                          <div style="margin-left:2.7em;">
+                            <a style="font-weight:bolder;font-size:36px;"> 72% </a><a style="font-weight:bolder;font-size:12px;"> Of negative review </a> <br>
+                            <a style="font-weight:lighter;font-size: 16px;"> Mentioned app stability and bugs that it's not working stable or keeps freezing.  </a><br><br>
+                          </div>
+                      
 
-                                <div>
+                          <section class="vertical-center-4 slider" style="margin-left:2em;">
+                            <div>
+                              <a style="font-weight:bolder;font-size:14px;"> 11111 </a> <br>
 
-                                    <a style="font-weight:bolder;font-size:36px;"> 72% </a><a style="font-weight:bolder;font-size:12px;"> Of negative review </a> <br>
-                                    <a style="font-weight:lighter;font-size: 16px;"> Found 7% mentioned app stability and bugs that it's not working stable or keeps freezing.  </a><br><br>
-                                    
-                                <div>
-
-                                   <div class="six columns">
-                                    <div>
-                                  
-                                     <a style="font-weight:bolder;font-size:14px;"> 11111 </a> <br>
-    
-                                     <span class="fa fa-star fa-lg checkon"></span>
-                                      <span class="fa fa-star fa-lg checkon"></span>
-                                      <span class="fa fa-star fa-lg checkoff"></span>
-                                      <span class="fa fa-star fa-lg checkoff"></span>
-                                      <span class="fa fa-star fa-lg checkoff"></span>
-                                   
-                                      <br>
-    
-                                     <a style="font-weight:lighter;font-size:12px;">It tries to turn on flashlight and open camera at the same time. Seems a bit buggy.  </a> <br>
-    
-                                    </div>
-                                    </div>
-    
-    
-    
-                                    <div class="six columns" >
-                                    <div>
-                                    
-                                             
-                                     <a style="font-weight:bolder;font-size:14px;">22222</a> <br>
-    
-                                     <span class="fa fa-star fa-lg checkon"></span>
-                                      <span class="fa fa-star fa-lg checkon"></span>
-                                      <span class="fa fa-star fa-lg checkoff"></span>
-                                      <span class="fa fa-star fa-lg checkoff"></span>
-                                      <span class="fa fa-star fa-lg checkoff"></span>
-                                   
-                                      <br>
-                                      
-                                     <a style="font-weight:lighter;font-size:12px;"> Edge Sense will stuck and keep walking by itself. Useless to use it in water 😪😪😪😪</a> <br>
-                                               
-                                    </div>
-                                    </div>
-    
-                                  </div> 
-
-                                   
-                                  
-                                   <div>
-                                      <div class="six columns" >
-                                          <div style="margin-top:1.6em;">
-                                           
-                                              <a style="font-weight:bolder;font-size:14px;"> 33333 </a> <br>
-    
-                                              <span class="fa fa-star fa-lg checkon"></span>
-                                               <span class="fa fa-star fa-lg checkon"></span>
-                                               <span class="fa fa-star fa-lg checkoff"></span>
-                                               <span class="fa fa-star fa-lg checkoff"></span>
-                                               <span class="fa fa-star fa-lg checkoff"></span>
-                                            
-                                               <br>
-                                               
-                                              <a style="font-weight:lighter;font-size:12px;"> You can only use the "Select One" function, and you can't support every Google native app. When you enable it, it is only "press".</a> <br>
-                                          </div>
-                                          </div>
-          
-          
-          
-                                          <div class="six columns">
-                                          <div style="margin-top:1.6em;">
-                                                   
-                                              <a style="font-weight:bolder;font-size:14px;"> 44444 </a> <br>
-    
-                                              <span class="fa fa-star fa-lg checkon"></span>
-                                               <span class="fa fa-star fa-lg checkon"></span>
-                                               <span class="fa fa-star fa-lg checkoff"></span>
-                                               <span class="fa fa-star fa-lg checkoff"></span>
-                                               <span class="fa fa-star fa-lg checkoff"></span>
-                                            
-                                               <br>
-                                               
-                                              <a style="font-weight:lighter;font-size:12px;"> 可以增加一個口袋防誤動作模式嗎？像我常放褲子後口袋倒放，常常蹲下修東西就會啟動相機，蠻困擾的。 </a> <br>
-                                                     
-                                          </div>
-                                          </div>
-          
-                                         </div> 
-    
-                                  </div>
-    
-                    
-
-                            </div>
-                            </div>
-
-
-                            
-                            <div class="six columns">
-                            <div class="pnav" style="margin-left:2.7em;">
-
-                                <div>
-
-                                    <a style="font-weight:bolder;font-size:36px;"> 28% </a><a style="font-weight:bolder;font-size:12px;"> Of negative review </a> <br>
-                                    <a style="font-weight:lighter;font-size: 16px;"> Considered it as a gimmick and limited feature and looked forward to it can be more complete. </a><br><br>
-                                    <div>
-                                    <div class="six columns">
-                                    <div>
-                                  
-                                     <a style="font-weight:bolder;font-size:14px;"> 11111 </a> <br>
-    
-                                     <span class="fa fa-star fa-lg checkon"></span>
-                                      <span class="fa fa-star fa-lg checkon"></span>
-                                      <span class="fa fa-star fa-lg checkoff"></span>
-                                      <span class="fa fa-star fa-lg checkoff"></span>
-                                      <span class="fa fa-star fa-lg checkoff"></span>
-                                   
-                                      <br>
-    
-                                     <a style="font-weight:lighter;font-size:12px;"> Edge sense Only two operations are not enough... Hurry up and add a few more.  </a> <br>
-    
-                                    </div>
-                                    </div>
-    
-    
-    
-                                    <div class="six columns" >
-                                    <div>
-                                    
-                                             
-                                     <a style="font-weight:bolder;font-size:14px;">22222</a> <br>
-    
-                                     <span class="fa fa-star fa-lg checkon"></span>
-                                      <span class="fa fa-star fa-lg checkon"></span>
-                                      <span class="fa fa-star fa-lg checkoff"></span>
-                                      <span class="fa fa-star fa-lg checkoff"></span>
-                                      <span class="fa fa-star fa-lg checkoff"></span>
-                                   
-                                      <br>
-                                      
-                                     <a style="font-weight:lighter;font-size:12px;"> Edge sense Only two operations are not enough... Hurry up and add a few more. </a> <br>
-                                               
-                                    </div>
-                                    </div>
-    
-                                   </div> 
-    
-                                   <div>
-                                      <div class="six columns" >
-                                          <div style="margin-top:1.6em;">
-                                           
-                                              <a style="font-weight:bolder;font-size:14px;"> 33333 </a> <br>
-    
-                                              <span class="fa fa-star fa-lg checkon"></span>
-                                               <span class="fa fa-star fa-lg checkon"></span>
-                                               <span class="fa fa-star fa-lg checkoff"></span>
-                                               <span class="fa fa-star fa-lg checkoff"></span>
-                                               <span class="fa fa-star fa-lg checkoff"></span>
-                                            
-                                               <br>
-                                               
-                                              <a style="font-weight:lighter;font-size:12px;"> You can only use the "Select One" function, and you can't support every Google native app. When you enable it, it is only "press".</a> <br>
-                                          </div>
-                                          </div>
-          
-          
-          
-                                          <div class="six columns">
-                                          <div style="margin-top:1.6em;">
-                                                   
-                                              <a style="font-weight:bolder;font-size:14px;"> 44444 </a> <br>
-    
-                                              <span class="fa fa-star fa-lg checkon"></span>
-                                               <span class="fa fa-star fa-lg checkon"></span>
-                                               <span class="fa fa-star fa-lg checkoff"></span>
-                                               <span class="fa fa-star fa-lg checkoff"></span>
-                                               <span class="fa fa-star fa-lg checkoff"></span>
-                                            
-                                               <br>
-                                               
-                                              <a style="font-weight:lighter;font-size:12px;"> 可以增加一個口袋防誤動作模式嗎？像我常放褲子後口袋倒放，常常蹲下修東西就會啟動相機，蠻困擾的。 </a> <br>
-                                                     
-                                          </div>
-                                          </div>
-          
-                                         </div> 
-    
-                                  </div>
-    
+                               <span class="fa fa-star fa-lg checkon"></span>
+                                <span class="fa fa-star fa-lg checkon"></span>
+                                <span class="fa fa-star fa-lg checkoff"></span>
+                                <span class="fa fa-star fa-lg checkoff"></span>
+                                <span class="fa fa-star fa-lg checkoff"></span>
                              
+                                <br>
 
-
-
+                               <a style="font-weight:lighter;font-size:12px;">When I changed to flashlight it tries to turn on flashlight and open camera at the same time. Seems a bit buggy.  </a> <br>
                             </div>
+
+                            <div>
+                              <a style="font-weight:bolder;font-size:14px;"> 11111 </a> <br>
+
+                              <span class="fa fa-star fa-lg checkon"></span>
+                               <span class="fa fa-star fa-lg checkon"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                            
+                               <br>
+
+                              <a style="font-weight:lighter;font-size:12px;">Edge Sense will stuck and keep walking by itself. Useless to use it in water 😪😪😪😪</a> <br>
                             </div>
+
+                            <div>
+                              <a style="font-weight:bolder;font-size:14px;"> 11111 </a> <br>
+
+                              <span class="fa fa-star fa-lg checkon"></span>
+                               <span class="fa fa-star fa-lg checkon"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                            
+                               <br>
+
+                              <a style="font-weight:lighter;font-size:12px;">Edge Sense will stuck and keep walking by itself. Useless to use it in water 😪😪😪😪</a> <br>
+                            </div>
+
+                            <div>
+                              <a style="font-weight:bolder;font-size:14px;"> 11111 </a> <br>
+
+                              <span class="fa fa-star fa-lg checkon"></span>
+                               <span class="fa fa-star fa-lg checkon"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                            
+                               <br>
+
+                              <a style="font-weight:lighter;font-size:12px;">Edge Sense will stuck and keep walking by itself. Useless to use it in water 😪😪😪😪</a> <br>
+                            </div>
+                           
+                          </section>
                         </div>
+                        </div>
+                        
+                        <div class="six columns">
+                        <div class="pnav">
+                          
+                          <div style="margin-left:2.7em;">
+                          <a style="font-weight:bolder;font-size:36px;"> 28% </a><a style="font-weight:bolder;font-size:12px;"> Of negative review </a> <br>
+                          <a style="font-weight:lighter;font-size: 16px;"> Considered it as a gimmick and limited feature and looked forward to it can be more complete. </a><br><br>
+                          </div>
+                          <section class="vertical-center-4 slider" style="margin-left:2em;">
+                            <div>
+                              <a style="font-weight:bolder;font-size:14px;"> 11111 </a> <br>
+
+                               <span class="fa fa-star fa-lg checkon"></span>
+                                <span class="fa fa-star fa-lg checkon"></span>
+                                <span class="fa fa-star fa-lg checkoff"></span>
+                                <span class="fa fa-star fa-lg checkoff"></span>
+                                <span class="fa fa-star fa-lg checkoff"></span>
+                             
+                                <br>
+
+                               <a style="font-weight:lighter;font-size:12px;">Edge sense Only two operations are not enough... Hurry up and add a few more. </a> <br>
+                            </div>
+
+                            <div>
+                              <a style="font-weight:bolder;font-size:14px;"> 11111 </a> <br>
+
+                              <span class="fa fa-star fa-lg checkon"></span>
+                               <span class="fa fa-star fa-lg checkon"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                            
+                               <br>
+
+                              <a style="font-weight:lighter;font-size:12px;">You can only use the "Select One" function, and you can't support every Google native app. When you enable it, it is only "press". </a> <br>
+                            </div>
+
+                            <div>
+                              <a style="font-weight:bolder;font-size:14px;"> 11111 </a> <br>
+
+                              <span class="fa fa-star fa-lg checkon"></span>
+                               <span class="fa fa-star fa-lg checkon"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                            
+                               <br>
+
+                              <a style="font-weight:lighter;font-size:12px;">Edge Sense will stuck and keep walking by itself. Useless to use it in water 😪😪😪😪</a> <br>
+                            </div>
+
+                            <div>
+                              <a style="font-weight:bolder;font-size:14px;"> 11111 </a> <br>
+
+                              <span class="fa fa-star fa-lg checkon"></span>
+                               <span class="fa fa-star fa-lg checkon"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                               <span class="fa fa-star fa-lg checkoff"></span>
+                            
+                               <br>
+
+                              <a style="font-weight:lighter;font-size:12px;">Edge Sense will stuck and keep walking by itself. Useless to use it in water 😪😪😪😪</a> <br>
+                            </div>
+                           
+                          </section>
+                        </div>
+                        </div>
+                        </div>
+                         
+                        
 
 
 
 
-
-
-                        <div class="row" style="margin-top:1em;">
+                        <div class="row" style="margin-top:4em;">
                           <div class="twelve columns">
                           
                           <div class="pnav" style="margin-left:2.7em;">
                              
                               <a style="font-size: 16px;"> 
-
-                                Note: Besides the developing bugs, I would like to focus on how we expand the possibility of Edge Sense to fulfill expectations from users. 
+                              
+                              There are two 2 major user pain ponts can be identified from these negative reviews:  <br><br>
+                              <span style="font-weight:bolder;">
+                                  • Users complained about the app stability and get frustrated with unexpected bugs <br>
+                                  • Considered it as a gimmick and limited feature and looked forward to it can be more complete. <br>
+                                  
+                              </span>
+                              
+                              
             
                               
                               </a>
@@ -688,7 +690,7 @@ new Chart(document.getElementById("line-chart"), {
                           <div class="twelve columns">
                           <div class="foo red"  style="margin-left:2.5em;margin-top:2.7em;"></div><br>
                           <div class="pnav" style="margin-left:2.7em;">
-                              <a style="font-weight:bolder;font-size: 24px;"> <br>Problem solved: The recovery key is too easy to forget and lose when in need.
+                              <a style="font-weight:bolder;font-size: 24px;"> <br>Problem solved: Considered it as a gimmick and limited feature and looked forward to it can be more complete. 
                               </a><br><br>
                               <a style="font-size: 16px;"> The research aimed to understand the feedback from users with the usage of the current feature. We decided to analyze the user review data from the Play Store and translate them to key factors to determine which part should be improved and what feature to roll out first.
             
@@ -722,6 +724,20 @@ new Chart(document.getElementById("line-chart"), {
                             </div>
                            </div>
                           </div>
+
+
+
+
+
+
+
+                          
+                              
+                         
+                            
+                           
+                            
+                            
                            
                            
                           
