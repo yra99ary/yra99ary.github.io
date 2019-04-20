@@ -486,34 +486,34 @@ there.
 
 .navbar-item0{
   position: relative;
-  left:24px;
+
 }
 
 .navbar-item1{
   position: relative;
-  left:34px;
+  left:1em;
 }
 
 .navbar-item2{
   position: relative;
-  left:44px;
+  left:2em;
 }
 
 .img-valign {
   vertical-align: middle;
-    margin-left: -1em;
-    margin-bottom: 0.1em;
+
+  
 }
 
 .img-valign2 {
   vertical-align: middle;
     margin-bottom: 0.1em;
-    margin-left:2.7em;
+   
 }
 
 .work-pre{
   margin-top:2em;
-  margin-left:2.7em;
+  
 }
 
 
