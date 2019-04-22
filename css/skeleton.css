@@ -734,7 +734,7 @@ border-radius: 16px;
 
 .text-in{
   
-  margin-left: 6px;
+  margin-left: 12px;
   margin-right: 6px;
 }
 
@@ -762,21 +762,29 @@ border-radius: 16px;
 
 
 .componentWrapper {
-  border:1px solid #EBEBEB;
+  border:1px solid #CBCBCB;
   border-radius: 40px;
   padding: 8px 4px 4px;
-  width: 90%;
+  width: 94%;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .componentWrapper .header {
   position:absolute;
-  margin-top:-25px;
+  margin-top:-15px;
   margin-left:10px;
-  color:white;
+  color:#CBCBCB;
   font-size:10px;
-  background:black;
+
+  background:white;
   border-radius:1px;
   padding:0px 2px;
 
   
+}
+
+.svg-color{
+
+  fill:#2BCA6F;
 }
