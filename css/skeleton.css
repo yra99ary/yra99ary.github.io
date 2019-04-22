@@ -757,5 +757,25 @@ border-radius: 16px;
   padding-bottom: 8px;
   border-radius: 6px;
 
+}
 
+
+
+.componentWrapper {
+  border:1px solid #EBEBEB;
+  border-radius: 40px;
+  padding: 15px 10px 10px;
+  width: 90%;
+}
+
+.componentWrapper .header {
+  position:absolute;
+  margin-top:-25px;
+  margin-left:10px;
+  color:white;
+  font-size:10px;
+  background:black;
+  border-radius:1px;
+
+  
 }
