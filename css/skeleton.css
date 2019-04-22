@@ -679,31 +679,59 @@ there.
 
 
 .list-item {
-  border: 1px solid #333;
+  border: 1px solid #EBEBEB;
+  
   display: block;
   overflow: hidden;
-  padding:10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 36px;
+
+
 }
 
 .list-item-img {
-  float: left
+ 
+  float: left;
+  width:48px;
+  height:48px;
+  border: 1px solid #2BCA6F;
+  border-radius: 48px;
+  background-color:#2BCA6F;
+
+  margin-left:8px;
+  margin-top:6px;
+ 
+
+  
+  
 }
 
 .list-item-img img {
-  display: block;       
+  display: block;  
+  margin:12px;
+  width:24px;
+  height:24px;   
 }
 
 .text {
-
-border: 1px solid #4CAF50;
+font-size:12px;
+border: 1px solid #CBCBCB;
 display: inline-block;
 margin-left: 10px; 
 padding:4px;
-border-radius: 25px;
+border-radius: 16px;
+
 
 }
 
 .text-in{
-  margin-left: 10px;
-  margin-right: 10px;
+  
+  
+  margin-right: 6px;
+}
+
+
+.icon-background2 {
+  color: #2BCA6F;
 }
