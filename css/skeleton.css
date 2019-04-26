@@ -129,6 +129,7 @@ body {
   color: #222; }
 
 
+
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
@@ -530,7 +531,6 @@ there.
   overflow: hidden;
   height: 300px;
   width: 300px;
-  
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.1), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 1px 0 rgba(0,0,0,.02);
   transition: box-shadow .25s ease-in;
    -moz-transition: box-shadow .25s ease-in;
