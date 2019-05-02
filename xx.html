@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title> Gary Cheng</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon_0.png">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128159371-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128159371-1');
+</script>
+
+</head>
+<body>
+
+      
+  <div class="container">
+        <div class="row">
+         <div id="topnav">
+   
+           <a href="/index.html">
+           <img src="images/back.svg" width="20" height="20" class="img-valign" alt="">
+           </a>
+       
+         </div>
+     </div> 
+     </div>
+     
+    <div class="container">
+                <div class="row">
+
+                  <div class="three columns" style="margin:10em auto; text-align:center" >
+                            
+                  </div>
+
+                   <div class="six columns" style="margin:10em auto; text-align:center" >
+
+                        <div>
+                                <img src="images/favicon_0.png" width="32" height="32" class="img-valign" alt=""><br><br>
+                                <label style="font-weight:bolder;font-size: 24px;">The content is protected. </label>
+                                <div >To view, please enter the password. </div><br>
+                                <input type="password" class="u-full-width" placeholder="Say the magic word..." type="password" id="pswd"><br>
+                                <input type="button" value="Submit" onclick="checkPswd();" />
+                         </div>
+       
+                 </div>
+
+                <div class="three columns" style="margin:10em auto; text-align:center" >
+                        
+                 </div>
+                </div>
+            </div>
+                       
+
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "garyzion";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="zion-wallet.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+}
+
+</script>
+
+</body>
+</html>

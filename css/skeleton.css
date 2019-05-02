@@ -268,7 +268,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #555;
   outline: 0; }
 label,
 legend {
@@ -371,6 +371,10 @@ form {
   float: right; }
 .u-pull-left {
   float: left; }
+
+  .u-half-width {
+    width: 50%;
+    box-sizing: border-box; }
 
 
 /* Misc
