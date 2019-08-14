@@ -555,7 +555,7 @@ there.
   .work-sc-font{
     margin-top:10px;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
     font-weight:bolder;
     text-decoration: none;
     font-family: 'Consolas', monospace;
@@ -565,7 +565,7 @@ there.
 
   .work-sc-font2{
     color: #000;
-    font-size: 12px;
+    font-size: 14px;
     font-weight:300;
     text-decoration: none;
     font-family: 'Consolas', monospace;
@@ -573,7 +573,7 @@ there.
 
   .work-sc-font3{
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     font-weight:300;
     text-decoration: none;
     font-family: 'Consolas', monospace;
