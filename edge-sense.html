@@ -134,7 +134,7 @@
     <div class="row">
     <div class="twelve columns">
     <div class="pnav">
-        <img draggable="false" src="/images/eg_test.png" alt="" class="responsive-c" >           
+        <img draggable="false" src="/images/zion-cover.png" alt="" class="responsive-c" >           
     </div>
    </div>
   </div>
@@ -907,21 +907,358 @@ new Chart(document.getElementById("line-chart"), {
 
 
                                 <a style="font-weight:bolder;font-size:18px;">2) IN-APP ACTIONS: Designed the experience that user assigned in-app actions to squeeze gestures </a> <br><br>
-                                <a style="font-size: 18px;"> At first, we listed down all the pre-loaded apps and used the following question as our major challenge for this topic in the brainstorming.<br><br></a>
-                              
-                            
-  
-  
+                                <a style="font-size: 18px;"> Action first or position first?
+                                  In this part, there were two behaviors should be clarified and we should pick the much appropriate one for our users.
+                                  <br><br></a>
+                             
                                 </div>
 
+
+
+
+
+                                <div class="row">
+                                  <div class="four columns">
+                                  <div class="pnav" style="margin-top:1em;">
+                                    <div>    
+                                      <video width=100% height=auto loop autoplay playsinline muted controls poster="/images/video_empty_bg.png">
+                                        <source src="/videos/send_after.mp4" type="video/mp4">
+                                      </video>
+                                      
+                                    </div>   
+                                  </div>
+                                  </div>
+                                  
+                                  
+                                  <div class="eight columns">
+                                  <div class="pnav" style="margin-top:1em;">
+                                    <div>    
+                                      <a style="font-weight:bolder;font-size:18px;"> (BEFORE) </a> <br><br>
+                                      <a style="font-weight:lighter;font-size: 18px;">In the beginning, we adopted a method called “action first” in the user flow because we thought users could easily imagine and arrange the result they will use by action list we provided.<br><br> But it seemed not to work very well after internal testing, although the user can successfully set up the in-app action, there is one thing they complained is once they tried to change to another action they should frequently go and set up back and forth.
+
+                                      </a><br>
+                                     </a>  <br><br><br>
+                                    </div>   
+                                  </div>
+                                  </div>
+                                  </div>
+
+
+                                  <div class="row">
+                                    <div class="four columns">
+                                    <div class="pnav" style="margin-top:1em;">
+                                      <div>    
+                                        <video width=100% height=auto loop autoplay playsinline muted controls poster="/images/video_empty_bg.png">
+                                          <source src="/videos/send_after.mp4" type="video/mp4">
+                                        </video>
+                                        
+                                      </div>   
+                                    </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="eight columns">
+                                    <div class="pnav" style="margin-top:1em;">
+                                      <div>    
+                                        <a style="font-weight:bolder;font-size:18px;"> (AFTER) </a> <br><br>
+                                        <a style="font-weight:lighter;font-size: 18px;">We found that “position first” could be more intuitive and easy to use; this way could have more flexibilities to change either the positions or actions when users change their minds.
+
+  
+                                        </a><br>
+                                       </a>  <br><br><br>
+                                      </div>   
+                                    </div>
+                                    </div>
+                                    </div>
+
+
+
+
+                          
+
+
+                         
+          <div class="row" style="margin-top:10em;">
+            <div class="twelve columns">
+            <div class="foo red"  style="margin-left:-0.1em;margin-top:2.7em;"></div><br>
+            <div class="pnav" >
+                <a style="font-weight:bolder;font-size: 24px;"> <br>TL;DR</a><br><br>
+                <a style="font-size: 18px;"> The research aimed to understand the feedback from users with the usages of the current features. We decided to analyze the user review data from the Play Store and translate them to key factors to determine which parts should be improved and what features should be rolled out first.
+
+                <br><br>
+                
+                </a>
+          
+            </div>
+           </div>
+          </div>
+          
+            <div class="row">
+              <div class="six columns">
+              <div class="pnav" style="margin-top:2em;">
+                <div>
+
+                    <a style="font-weight:bolder;font-size:12px;"> Store Rating History (After September update) </a><br>
+                    <canvas id="line-chart-2"></canvas>
+                  
+                </div>   
+        
+              </div>
+              </div>
+        
+     
+              <div class="six columns">
+                <div class="pnav" style="margin-top:2em;">
+                  
+                          <a style="font-weight:bolder;font-size:12px;"> Sentimet Score (After September update) </a><br>
+                          <div>
+                            <canvas id="bar-chart-2"></canvas>
+                        </div>
+                  <br> <br>
+                  
+<script>
+
+
+new Chart(document.getElementById("line-chart-2"), {
+type: 'bar',
+data: {
+  labels: ["Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+  datasets: [
+  { label: 'A',
+    yAxesGroup: 'A',
+      data: [4.92, 4.74, 4.61, 4.72, 4.78, 4.8, 4.79],
+      pointRadius: [5,5,5,5,5,5,5,10],
+      pointHoverRadius: 10,
+      pointBackgroundColor: ["#FFFFFF", "#FFFFFF", "#FFFFFF","#2DCA70","#2DCA70","#2DCA70","#2DCA70"],
+      pointBorderColor: ["#2DCA70", "#2DCA70", "#2DCA70", "#2DCA70", "#2DCA70", "#2DCA70", "#2DCA70"],
+      label: "Rating",
+      borderColor: "#2DCA70",
+      fontFamily: "Consolas",
+      borderWidth: 2,
+      backgroundColor: ['rgba(45, 202, 112, 1)'],
+      fill: false,
+      type: 'line',
+    },
+
+
+   
+
+  {
+              label: "Bar Dataset",
+              data: [4.92, 4.74, 4.61],
+              backgroundColor: ['rgba(255, 255, 255, 0)','rgba(255, 255, 255, 0)','rgba(255, 255, 255, 0)','rgba(255, 255, 255, 1)'],
+          },
+
+    
+  ]
+},
+
+
+options: {
+  title: {
+    display: true,
+  
+    fontFamily: "Consolas",
+    fontColor:"black",
+  },
+  elements: {
+      line: {
+          tension: 0
+      }
+  },
+
+  legend: { display: false 
+  },
+
+
+  scales: {
+
+    xAxes: [{  
+             
+      gridLines: {
+                      drawBorder: true,
+                      display: false,
+            
+                  },  
+
+            
+}],            
+
+
+      yAxes: [{
+
+        gridLines: {
+                      drawBorder: true,
+                      display: false,
+                  },
+          display: true,
+          ticks: {
+              suggestedMin: 4.5, 
+              suggestedMax: 5, 
+              fixedStepSize: 0.5,
+              callback: function(value) {
+                                      return  value + " ★"
+                                      }
+            
+          },
+
+      }]
+  }
+
+}
+
+});
+
+
+</script>
+          
+                </div>
+                </div>
+              </div>
+              
+
+
+               
+                
+                    <div class="row" >
+                    <div class="six columns">
+                    <div class="pnav" style="margin-top:0.2em;">
+                      
                     
-                           
-                         
-                         
-                         
+                    
+                      
+                    </div>
+                    </div>
+              
+           
+                    <div class="six columns">
+                      <div class="pnav" style="margin-top:2em;">
+                   
+                        <br> <br>
+                        
+                      
+                        <script>
+
+                          new Chart(document.getElementById("bar-chart-2"), {
+                            type: 'bar',
+                            data: {
+                              labels: ["Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+                              datasets: [
+
+                                { label: 'A',
+                                yAxesGroup: 'A',
+                                  data: [89, 76, 68, 72, 83, 80, 79 ],
+                                  
+                                  label: "Postive",
+                                  borderColor: "#FFFFFF",
+                                  fontFamily: "Consolas",
+                                  borderWidth: 1,
+                                  backgroundColor: ['rgba(43, 202, 111, 1)','rgba(43, 202, 111, 1)','rgba(43, 202, 111, 1)','rgba(43, 202, 111, 1)','rgba(43, 202, 111, 1)','rgba(43, 202, 111, 1)','rgba(43, 202, 111, 1)'],
+                                  fill: true,
+                                },
+                          
+                          
+                                { label: 'B',
+                                yAxesGroup: 'B',
+                                  data: [9, 20, 28, 20, 15, 12, 16 ],
+                                  label: "Negative",
+                                  borderColor: "#FFFFFF",
+                                  fontFamily: "Consolas",
+                                  borderWidth: 1,
+                                  backgroundColor: ['rgba(243, 125, 142, 1)','rgba(243, 125, 142, 1)','rgba(243, 125, 142, 1)','rgba(243, 125, 142, 1)','rgba(243, 125, 142, 1)','rgba(243, 125, 142, 1)','rgba(243, 125, 142, 1)'],
+                                  fill: true,
+                                },
+
+                                
+
+                                { label: 'C',
+                                yAxesGroup: '',
+                                  data: [2, 4, 4, 8,2,8,5 ],
+                                  label: "Neutral",
+                                  borderColor: "#FFFFFF",
+                                  fontFamily: "Consolas",
+                                  borderWidth: 1,
+                                  backgroundColor: ['rgba(252, 214, 122, 1)','rgba(252, 214, 122, 1)','rgba(252, 214, 122, 1)','rgba(252, 214, 122, 1)','rgba(252, 214, 122, 1)','rgba(252, 214, 122, 1)','rgba(252, 214, 122, 1)'],
+                                  fill: true,
+                                },
 
 
+                              ]
+                            },
+                          
+                            
+                            options: {
+                              title: {
+                                display: true,
+  
+                                fontFamily: "Consolas",
+                                fontColor:"black",
+                              },
+                              
+                              legend: { 
+                                display: true,
+                                position: 'bottom', 
 
+                                labels: {
+                                  
+                                  usePointStyle: true,
+                                 },
+                               
+                              },
+                            
+                          
+                              scales: {
+                                
+                                xAxes: [{  
+                                  
+                                  stacked: true,
+                                  barThickness: 20,                                  
+                                  gridLines: {
+                                                  drawBorder: true,
+                                                  display: false
+                                              },                        
+                            }],            
+                          
+                          
+                                  yAxes: [{
+
+                                  
+                                    stacked: true,
+                          
+                                    gridLines: {
+                                                  drawBorder: true,
+                                                  display: false
+                                              },
+                                      display: true,
+                                      ticks: {
+                                      fixedStepSize: 50,
+                                      Min: 0, 
+                                      Max: 100, 
+
+                                      callback: function(value) {
+                                        return value + "%"
+                                        }
+
+                                  },
+
+
+                         
+                          
+                                  }]
+                              }
+                          
+                            }
+                          
+                          });
+                          
+                          
+                           </script>
+
+                
+                      
+                      </div>
+                    </div>
+                    </div>
 
 
 
