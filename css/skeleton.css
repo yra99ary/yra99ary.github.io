@@ -125,7 +125,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: 'Consolas', monospace;
+  font-family: 'ApercuMono','Consolas';
   color: #222; }
 
 
@@ -160,6 +160,7 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
+ 
   color: #4A4A4A; }
 a:hover {
   color: #4A4A4A; }
@@ -432,12 +433,20 @@ there.
   background-color: #ffffff;
   font-family: 'ApercuMono', 'Consolas';
   font-weight:lighter;
-  font-size: 16px;
+  font-size: 14px;
   margin-top:20px;
   margin-bottom:20px;
  
 
 }
+
+
+
+.bxc{
+  font-family: 'ApercuMono';
+
+}
+
 
 /* Style the links inside the navigation bar */
 #topnav a {
@@ -464,13 +473,14 @@ there.
 
 .pnav {
   background-color: #ffffff;
-  font-family: 'ApercuMono';
+  font-family: 'ApercuMono','Consolas';
   font-size: 14px;
 
 }
 
 /* Style the links inside the navigation bar */
 .pnav a {
+  
   color: #000000;
 
 }
@@ -833,9 +843,8 @@ border-radius: 16px;
   transform: scale(1.1);
 }
 
-
-
 @font-face {
   font-family: 'ApercuMono';
-  src: url('https://github.com/yra99ary/yra99ary.github.io/blob/master/images/apercumono.ttf') format("truetype"),
+  src: url('https://github.com/yra99ary/yra99ary.github.io/blob/master/fonts/apercumono.ttf') format("truetype"),
+  url('https://github.com/yra99ary/yra99ary.github.io/blob/master/fonts/apercumono.woff') format("woff"),
 }
