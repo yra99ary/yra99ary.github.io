@@ -828,7 +828,6 @@ border-radius: 16px;
 
 .item {
   position: relative;
-
   border-style:solid;
   border-width:1px;
   overflow: hidden;
