@@ -430,7 +430,7 @@ there.
 /* Add a black background color to the top navigation */
 #topnav {
   background-color: #ffffff;
-  font-family: 'Consolas', monospace;
+  font-family: 'ApercuMono', 'Consolas';
   font-weight:lighter;
   font-size: 16px;
   margin-top:20px;
@@ -464,7 +464,7 @@ there.
 
 .pnav {
   background-color: #ffffff;
-  font-family: 'Consolas', monospace;
+  font-family: 'ApercuMono';
   font-size: 14px;
 
 }
@@ -831,4 +831,11 @@ border-radius: 16px;
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+
+
+@font-face {
+  font-family: 'ApercuMono';
+  src: url('https://github.com/yra99ary/yra99ary.github.io/blob/master/images/apercumono.ttf') format("truetype"),
 }
