@@ -48,6 +48,8 @@
     padding: 0; }
 }
 
+
+
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
@@ -125,7 +127,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: 'ApercuMono','Consolas';
+  font-family: 'Apercu Mono', Consolas;
   color: #222; }
 
 
@@ -424,6 +426,15 @@ there.
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
 
+@import url();
+
+@font-face {
+  font-family: 'Apercu Mono';
+  src: url('font/ApercuPro.ttf') format("truetype"),
+       url('font/ApercuPro-Mono.ttf') format("truetype");
+}
+
+
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -431,8 +442,7 @@ there.
 /* Add a black background color to the top navigation */
 #topnav {
   background-color: #ffffff;
-  font-family: 'ApercuMono', 'Consolas';
-  font-weight:lighter;
+  font-family: 'Apercu Mono';
   font-size: 14px;
   margin-top:20px;
   margin-bottom:20px;
@@ -441,11 +451,6 @@ there.
 }
 
 
-
-.bxc{
-  font-family: 'ApercuMono';
-
-}
 
 
 /* Style the links inside the navigation bar */
@@ -473,7 +478,7 @@ there.
 
 .pnav {
   background-color: #ffffff;
-  font-family: 'ApercuMono','Consolas';
+  font-family: 'Apercu Mono';
   font-size: 14px;
 
 }
@@ -569,7 +574,7 @@ there.
     font-size: 18px;
     font-weight:bolder;
     text-decoration: none;
-    font-family: 'Consolas', monospace;
+    font-family: 'Apercu Mono', Consolas;
     margin-bottom: 0rem;
     margin-bottom: 0rem;
   }
@@ -579,7 +584,7 @@ there.
     font-size: 14px;
     font-weight:300;
     text-decoration: none;
-    font-family: 'Consolas', monospace;
+    font-family: 'Apercu Mono', Consolas;
   }
 
   .work-sc-font3{
@@ -587,7 +592,7 @@ there.
     font-size: 16px;
     font-weight:300;
     text-decoration: none;
-    font-family: 'Consolas', monospace;
+    font-family: 'Apercu Mono', Consolas;
   }
 
   .responsive {
@@ -843,8 +848,3 @@ border-radius: 16px;
   transform: scale(1.1);
 }
 
-@font-face {
-  font-family: 'ApercuMono';
-  src: url('https://github.com/yra99ary/yra99ary.github.io/blob/master/fonts/apercumono.ttf') format("truetype"),
-  url('https://github.com/yra99ary/yra99ary.github.io/blob/master/fonts/apercumono.woff') format("woff"),
-}
