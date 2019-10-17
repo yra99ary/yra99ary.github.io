@@ -430,6 +430,7 @@ there.
 @font-face {
   font-family: 'apercumono';
   src: url('../fonts/ApercuPro-Mono.woff') format("woff");
+  src: url('../fonts/ApercuPro-Mono.woff') format("woff2");
  
 }
 
@@ -437,12 +438,14 @@ there.
 @font-face {
   font-family: 'apercureg';
   src: url('../fonts/ApercuPro.woff') format("woff");
+  src: url('../fonts/ApercuPro.woff2') format("woff2");
   
 }
 
 @font-face {
   font-family: 'apercubold';
   src: url('../fonts/ApercuPro-Bold.woff') format("woff");
+  src: url('../fonts/ApercuPro-Bold.woff2') format("woff2");
  
  
 }
