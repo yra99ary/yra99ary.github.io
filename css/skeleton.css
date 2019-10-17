@@ -458,7 +458,7 @@ there.
 /* Add a black background color to the top navigation */
 #topnav {
   background-color: #ffffff;
- 
+  font-family: 'apercureg';
   font-size: 14px;
   margin-top:20px;
   margin-bottom:20px;
@@ -472,7 +472,7 @@ there.
   color: #000000;
   /*display: block;*/
   text-decoration: none;
-  font-family: 'apercumono';
+ 
 
 }
 
@@ -487,7 +487,7 @@ there.
   background-color: #ffffff;
   font-weight:bolder;
   color: #000000;
-  border-bottom: 1.5px solid #333333;
+  border-bottom: 2px solid black;
 }
 
 .pnav {
@@ -588,7 +588,7 @@ there.
     font-size: 18px;
     font-weight:bolder;
     text-decoration: none;
-    font-family: 'Apercu Mono', Consolas;
+    font-family: 'apercumono', Consolas;
     margin-bottom: 0rem;
     margin-bottom: 0rem;
   }
@@ -598,7 +598,7 @@ there.
     font-size: 14px;
     font-weight:300;
     text-decoration: none;
-    font-family: 'Apercu Mono', Consolas;
+    font-family: 'apercumono', Consolas;
   }
 
   .work-sc-font3{
@@ -606,7 +606,7 @@ there.
     font-size: 16px;
     font-weight:300;
     text-decoration: none;
-    font-family: 'Apercu Mono', Consolas;
+    font-family: 'apercumono', Consolas;
   }
 
   .responsive {
