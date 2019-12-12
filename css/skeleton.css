@@ -158,6 +158,9 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin-top: 0; }
 
+  p1 {
+    height: 0px; }
+
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -487,7 +490,7 @@ there.
   background-color: #ffffff;
   font-weight:bolder;
   color: #000000;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
 }
 
 .pnav {
@@ -874,5 +877,17 @@ border-radius: 16px;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 
-  
+}
+
+html {
+  position: relative;
+  min-height:100%;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: #7bbc42;
 }
