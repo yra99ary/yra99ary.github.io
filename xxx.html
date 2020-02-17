@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title> Gary Cheng</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon_0.png">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128159371-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128159371-1');
+</script>
+
+</head>
+<body>
+
+      
+ 
+     
+    <div class="container">
+                <div class="row" style="position: relative">
+                   <div class="cent" >
+
+                        <div>    
+
+                          <a href="/index.html">
+                            <img src="images/back.svg" width="24" height="24" class="img-valign" alt="">
+                            </a><br><br>
+                 
+                                <img src="images/Password.gif" width="160" height="160" class="img-valign" alt=""><br><br>
+                                
+                                <label style="font-family:apercumono;font-weight:bolder;font-size: 24px;">Hey, this content is protected. </label>
+                                <div style="font-family:apercumono">To view, please enter the password. </div><br>
+                                <input type="password"  placeholder="Say the magic word..." type="password" id="pswd" style="font-family:apercumono;width:300px;"><br>
+                                <input style="font-family:apercubold;" type="button" value="Say" onclick="checkPswd();" /> <br>
+
+
+                         </div>
+       
+                 </div>
+
+    
+                </div>
+     </div>
+                       
+
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "garyedge";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="edge-sense.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+}
+
+</script>
+
+<div class="container">
+  <div class="row">
+    <footer class="footer">
+  <div> 
+    <a style="font-family:apercumono;font-size:12px;letter-spacing:-1px;">© 2020, Designed & Coded By Gary Cheng.</a> 
+    </div>
+
+   </footer>
+
+  </div>
+</div>
+
+</body>
+</html>
